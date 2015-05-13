@@ -14,6 +14,7 @@ Plugin 'oblitum/rainbow'
 Plugin 'JLimperg/Align'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'klen/python-mode'
 
 Plugin 'jlconlin/ENDF.vim'
 
