@@ -13,6 +13,7 @@ Plugin 'neosimsim/vim-latex'
 Plugin 'oblitum/rainbow'
 Plugin 'JLimperg/Align'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'jlconlin/ENDF.vim'
 
