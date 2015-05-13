@@ -15,6 +15,7 @@ Plugin 'JLimperg/Align'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'klen/python-mode'
+Plugin 'vim-scripts/VisIncr'
 
 Plugin 'jlconlin/ENDF.vim'
 
