@@ -16,6 +16,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'klen/python-mode'
 Plugin 'vim-scripts/VisIncr'
+Plugin 'vim-scripts/XML-Folding'
 
 Plugin 'jlconlin/ENDF.vim'
 
@@ -87,3 +88,6 @@ autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 
 " Map to open NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" Create rainbows
+let g:rainbow_active = 1
