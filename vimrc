@@ -72,6 +72,10 @@ set ignorecase          " Searching is case insensitive
 set smartcase           " Case insensitive if pattern contains uppercase characters
 set hidden              " Hide a buffer when it is abandoned
 
+" Default to horizontal scrollbinding instead of vertical
+set sbo-=ver
+set sbo+=hor
+
 " Set options when saving a session
 set sessionoptions=blank,curdir,folds,help,options,resize,tabpages,winsize
 set colorcolumn=81      " Highlight the 81st column
