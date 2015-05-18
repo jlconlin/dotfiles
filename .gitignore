@@ -1,1 +1,10 @@
 .netrwhist
+bundle/Align/
+bundle/ENDF.vim/
+bundle/VisIncr/
+bundle/XML-Folding/
+bundle/YouCompleteMe/
+bundle/nerdtree/
+bundle/python-mode/
+bundle/rainbow/
+bundle/vim-latex/
