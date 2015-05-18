@@ -6,7 +6,12 @@ The easiestland probably only-way to get this distribution is by using `git`. Si
 
     git clone --recursive https://github.com/jlconlin/ViMConfig.git ~/.vim
 
-Once the distribution has been cloned, you need to build the `YouCompleteMe` plugin. On a Mac simply do:
+Cloning my distribution, will not automatically get the plugins. However, the Vundle plugin can do that anyway. Simply do this:
+
+    vim +PluginInstall +qall
+as described by the installation procedures for Vundle.
+
+Once you have installed the plugins, you need to build the `YouCompleteMe` plugin. On a Mac simply do:
 
     cd ~/.vim/bundle/YouCompleteMe
     ./install.sh --clang-completer
@@ -35,7 +40,6 @@ Then create a link from `$HOME/.vimrc` to `$HOME/.gvimrc`. Doing this will make 
 
 ## ViM Plugins used in this distribution
 
- - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
  - [vim-latex](https://github.com/neosimsim/vim-latex)
  - [rainbow](https://github.com/oblitum/rainbow)
  - [Align](https://github.com/JLimperg/Align)
