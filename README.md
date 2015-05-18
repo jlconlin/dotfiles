@@ -35,12 +35,13 @@ Then create a link from `$HOME/.vimrc` to `$HOME/.gvimrc`. Doing this will make 
 
 ## ViM Plugins used in this distribution
 
-[YouCompleteMe][https://github.com/Valloric/YouCompleteMe]
-[vim-latex][https://github.com/neosimsim/vim-latex]
-[rainbow][https://github.com/oblitum/rainbow]   
-[Align][https://github.com/JLimperg/Align]   
-[nerdtree][https://github.com/scrooloose/nerdtree]   
-[YouCompleteMe][https://github.com/Valloric/YouCompleteMe]   
-[python-mode][https://github.com/klen/python-mode]   
-[VisIncr][https://github.com/vim-scripts/VisIncr]   
-[XML-Folding][https://github.com/vim-scripts/XML-Folding]   
+ - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+ - [vim-latex](https://github.com/neosimsim/vim-latex)
+ - [rainbow](https://github.com/oblitum/rainbow)
+ - [Align](https://github.com/JLimperg/Align)
+ - [nerdtree](https://github.com/scrooloose/nerdtree)
+ - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+ - [python-mode](https://github.com/klen/python-mode)
+ - [VisIncr](https://github.com/vim-scripts/VisIncr)
+ - [XML-Folding](https://github.com/vim-scripts/XML-Folding)
+ - [ENDF.vim](https://github.com/jlconlin/ENDF.vim)
