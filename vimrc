@@ -17,6 +17,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'klen/python-mode'
 Plugin 'vim-scripts/VisIncr'
 Plugin 'vim-scripts/XML-Folding'
+Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'jlconlin/ENDF.vim'
 
