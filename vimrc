@@ -72,6 +72,11 @@ set incsearch           " Show pattern while being typed
 set ignorecase          " Searching is case insensitive
 set smartcase           " Case insensitive if pattern contains uppercase characters
 set hidden              " Hide a buffer when it is abandoned
+set linebreak           " Break long lines between words 
+
+" Default to horizontal scrollbinding instead of vertical
+set sbo-=ver
+set sbo+=hor
 
 " Set options when saving a session
 set sessionoptions=blank,curdir,folds,help,options,resize,tabpages,winsize
