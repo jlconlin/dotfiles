@@ -11,12 +11,6 @@ Cloning my distribution, will not automatically get the plugins. However, the Vu
     vim +PluginInstall +qall
 as described by the installation procedures for Vundle.
 
-Once you have installed the plugins, you need to build the `YouCompleteMe` plugin. On a Mac simply do:
-
-    cd ~/.vim/bundle/YouCompleteMe
-    ./install.sh --clang-completer
-For other systems, follow the instructions on the [YouCompleteMe][https://github.com/Valloric/YouCompleteMe]
-
 ## Configure the configuration
 Included with these configuration files are
 
@@ -44,8 +38,9 @@ Then create a link from `$HOME/.vimrc` to `$HOME/.gvimrc`. Doing this will make 
  - [rainbow](https://github.com/oblitum/rainbow)
  - [Align](https://github.com/JLimperg/Align)
  - [nerdtree](https://github.com/scrooloose/nerdtree)
- - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
  - [python-mode](https://github.com/klen/python-mode)
  - [VisIncr](https://github.com/vim-scripts/VisIncr)
  - [XML-Folding](https://github.com/vim-scripts/XML-Folding)
  - [ENDF.vim](https://github.com/jlconlin/ENDF.vim)
+ - [cpp.vim](https://github.com/jlconlin/cpp.vim)
+ - [quick-scope](https://github.com/unblevable/quick-scope)

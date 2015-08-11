@@ -6,20 +6,20 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " My Bundles here:
 Plugin 'neosimsim/vim-latex'
 Plugin 'oblitum/rainbow'
 Plugin 'JLimperg/Align'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'klen/python-mode'
 Plugin 'vim-scripts/VisIncr'
 Plugin 'vim-scripts/XML-Folding'
-Plugin 'jiangmiao/auto-pairs'
+Plugin 'unblevable/quick-scope'
 
-Plugin 'jlconlin/ENDF.vim'
+Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
+Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -97,3 +97,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Create rainbows
 let g:rainbow_active = 1
+
+" Don't need the completion from py-mode because I have YouCompleteMe
+" py-mode completion is really slow anyway
+let g:pymode_rope_completion=0
