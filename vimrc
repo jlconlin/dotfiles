@@ -17,6 +17,8 @@ Plugin 'klen/python-mode'
 Plugin 'vim-scripts/VisIncr'
 Plugin 'vim-scripts/XML-Folding'
 Plugin 'unblevable/quick-scope'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Shougo/vimshell.vim'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
@@ -64,7 +66,7 @@ set foldmethod=syntax   " fold code by define syntax
 set undofile            " Make vim do persistent undo
 set cursorline          " Highlight current line
 set vb                  " Use visual bell instead of beeping
-set autochdir			" automatically change window's cwd to file's dir
+"set autochdir			" automatically change window's cwd to file's dir
 set formatoptions+=nrl  " Automatic formatting options
 set autoread            " Automatically read a file that has been changed
 set hlsearch            " Highlight search results
