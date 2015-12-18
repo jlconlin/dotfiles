@@ -2,7 +2,7 @@
 My personal ViM Configuration files
 
 ## Getting the distribution
-The easiest and probably only-way to get this distribution is by using `git`. Since the [Vundle][https://github.com/gmarik/Vundle.vim] is a submodule of this repository, it is recommended that you clone recursively
+The easiestland probably only-way to get this distribution is by using `git`. Since the [Vundle](https://github.com/gmarik/Vundle.vim) is a submodule of this repository, it is recommended that you clone recursively
 
 	git clone --recursive https://github.com/jlconlin/ViMConfig.git ~/.vim
 
