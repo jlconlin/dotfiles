@@ -12,7 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'neosimsim/vim-latex'
 Plugin 'oblitum/rainbow'
 Plugin 'JLimperg/Align'
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 Plugin 'klen/python-mode'
 Plugin 'vim-scripts/VisIncr'
 Plugin 'vim-scripts/XML-Folding'
@@ -47,8 +47,8 @@ set undodir^=~/.vimundo,~/tmp
 set macmeta             " use Mac's option key as meta
 
 syntax on
-set shiftwidth=4        " Number of spaces for each step of (auto) indent
-set tabstop=4           " Number of spaces that a <Tab> counts for
+set shiftwidth=2        " Number of spaces for each step of (auto) indent
+set tabstop=2           " Number of spaces that a <Tab> counts for
 set ruler               " Always show status bar on bottom
 set nu                  " Show line numbers
 set printoptions=paper:letter,number:y,duplex:off,left:5pc
@@ -94,12 +94,5 @@ nnoremap \Z :set foldexpr=(getline(v:lnum)=~@/)?0:(getline(v:lnum-1)=~@/)\\|\\|(
 " differences
 autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 
-" Map to open NERDTree
-map <C-n> :NERDTreeToggle<CR>
-
 " Create rainbows
-let g:rainbow_active = 1
-
-" Don't need the completion from py-mode because I have YouCompleteMe
-" py-mode completion is really slow anyway
-let g:pymode_rope_completion=0
+"let g:rainbow_active = 1
