@@ -97,3 +97,10 @@ autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 
 " Create rainbows
 "let g:rainbow_active = 1
+
+" Use CTRL-\ to open a (ctag) definition in a new tab
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+" Use Alt-] to open a (ctag) definition in a vertical split
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+set tags=./tags;/
