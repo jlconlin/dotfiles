@@ -20,6 +20,9 @@ Plugin 'unblevable/quick-scope'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
 Plugin 'ervandew/supertab.git'
+Plugin 'majutsushi/tagbar'
+Plugin 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
@@ -103,4 +106,11 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 " Use Alt-] to open a (ctag) definition in a vertical split
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
-set tags=./tags;/
+" Where ViM should search for ctags
+set tags=~/.vimtags,./tags;/
+
+" Show the tags for the current file
+nmap <F8> :TagbarToggle<CR>
+
+" Update the ctags whenever a file is saved
+let g:easytags_events = ['BufWritePost']

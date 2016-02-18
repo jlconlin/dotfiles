@@ -55,6 +55,9 @@ There are some (just one as of this writing) plugins that need to be built after
  - [vimproc][12]
  - [vimshell][13]
 - [SuperTab][14]
+- [Tagbar][15]
+- [vim-easytags][16]
+- [vim-misc][17]
 
 [1]:	https://github.com/gmarik/Vundle.vim
 [2]:	https://github.com/neosimsim/vim-latex
@@ -70,3 +73,6 @@ There are some (just one as of this writing) plugins that need to be built after
 [12]:	https://github.com/Shougo/vimproc.vim
 [13]:	https://github.com/Shougo/vimshell.vim
 [14]:	https://github.com/ervandew/supertab.git
+[15]:	http://github.com/majutsushi/tagbar
+[16]:	https://github.com/xolox/vim-easytags
+[17]:	https://github.com/xolox/vim-misc
