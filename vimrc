@@ -19,6 +19,7 @@ Plugin 'vim-scripts/XML-Folding'
 Plugin 'unblevable/quick-scope'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
+Plugin 'ervandew/supertab.git'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files

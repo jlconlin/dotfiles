@@ -33,7 +33,7 @@ hi Conceal guibg=white guifg=black
 
 " Indent really long lines (but they are not really indented)
 set breakindent
-set breakindentopt=shift:4
+set breakindentopt=shift:2
 
 " Maps for quickly inserting integrals
 call IMAP (g:Tex_Leader.'I', "\\int_{<++>}^{<++>} <++> d<++>", 'tex')
