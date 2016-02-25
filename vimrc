@@ -113,4 +113,8 @@ set tags=~/.vimtags,./tags;/
 nmap <F8> :TagbarToggle<CR>
 
 " Update the ctags whenever a file is saved
-let g:easytags_events = ['BufWritePost']
+" let g:easytags_events = ['BufWritePost']
+
+" Update easy tags asynchronously
+" This doesn't freeze the window while the tags are updated
+let g:easytags_async=1
