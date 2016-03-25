@@ -36,6 +36,7 @@ My configuration uses a few custom directories to store temporary and backup fil
   - `~/.vimbackup`
   - `~/.vimswap`
   - `~/.vimundo`
+
 If these files are not present, then there will be some minor errors when opening up a file as it won't know what directory to look in for backup, swap, and undos.
 
 ## Plugins
