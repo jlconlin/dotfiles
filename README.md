@@ -15,21 +15,27 @@ Included with these configuration files are
 
 To use these files—without copying them—create a file `~/.vimrc` with this as the contents
 
-	if filereadable(expand("~/.vim/vimrc"))
-	  source ~/.vim/vimrc
-	endif
-	"
-	if has("gui_running") && filereadable(expand("~/.vim/gvimrc"))
-	    source ~/.vim/gvimrc
-	endif
-	
-	if filereadable(expand("~/.vim/vimrc.local"))
-	  source ~/.vim/vimrc.local
-	endif
+```vim
+if filereadable(expand("~/.vim/vimrc"))
+  source ~/.vim/vimrc
+endif
+"
+if has("gui_running") && filereadable(expand("~/.vim/gvimrc"))
+    source ~/.vim/gvimrc
+endif
+
+if filereadable(expand("~/.vim/vimrc.local"))
+  source ~/.vim/vimrc.local
+endif
+```
+
 Then create a link from `$HOME/.vimrc` to `$HOME/.gvimrc`. Doing this will make ViM see these configuration files and you will be happy.
 Cloning my distribution, will not automatically get the plugins. However, the Vundle plugin can do that anyway. Simply do this:
 
-## Installing Plugins
+## Plugins
+Plugins are managed by [Vundle][1]. If you cloned recursively then this should be available.
+
+### Installing Plugins
 Once the repository has been cloned and configured the plugins can be installed simply by executing:
 
 	vim +PluginInstall +qall
@@ -54,10 +60,10 @@ There are some (just one as of this writing) plugins that need to be built after
  - [quick-scope][11]
  - [vimproc][12]
  - [vimshell][13]
-- [SuperTab][14]
-- [Tagbar][15]
-- [vim-easytags][16]
-- [vim-misc][17]
+ - [SuperTab][14]
+ - [Tagbar][15]
+ - [vim-easytags][16]
+ - [vim-misc][17]
 
 [1]:	https://github.com/gmarik/Vundle.vim
 [2]:	https://github.com/neosimsim/vim-latex
