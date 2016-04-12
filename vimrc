@@ -23,9 +23,11 @@ Plugin 'ervandew/supertab.git'
 Plugin 'majutsushi/tagbar'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
+Plugin 'christophermca/meta5'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
+" Plugin 'jlconlin/cmake.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -48,7 +50,7 @@ set undodir^=~/.vimundo,~/tmp
 :cnoremap <C-A> <home>
 :cnoremap <C-E> <end>
 
-set macmeta             " use Mac's option key as meta
+colorscheme meta5       " Use the great colorscheme from christophermca
 
 syntax on
 set shiftwidth=2        " Number of spaces for each step of (auto) indent
@@ -87,6 +89,11 @@ set sbo+=hor
 " Set options when saving a session
 set sessionoptions=blank,curdir,folds,help,options,resize,tabpages,winsize
 set colorcolumn=81      " Highlight the 81st column
+
+" Settings unique to Mac
+if has("macunix")
+  set macmeta             " use Mac's option key as meta
+endif
 
 " Fold based on a regular expression
 " After searching, fold those things not found, by issuing the command '\z'

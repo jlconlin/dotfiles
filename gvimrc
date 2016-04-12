@@ -1,10 +1,12 @@
-colorscheme macvim
-
 set guioptions+=b   " Add bottom scrollbar
 set columns=100
 set lines=75
 
-set guifont=Menlo\ Regular:120    " Set font to Menlo 12 pt size.  
+" Settings unique to Mac
+if has("macunix")
+  set guifont=Menlo\ Regular:120    " Set font to Menlo 12 pt size.  
+endif
+
 set t_vb=       " Use visual bell instead of beeping
 
 " tab mappings 
