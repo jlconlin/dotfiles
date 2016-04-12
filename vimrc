@@ -24,6 +24,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 Plugin 'christophermca/meta5'
+Plugin 'elzr/vim-json'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files

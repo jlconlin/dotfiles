@@ -72,6 +72,7 @@ There are some (just one as of this writing) plugins that need to be built after
  - [vim-easytags][17]
  - [vim-misc][18]
  - [meta5][19]
+ - [vim-json][20]
 
 [1]:	https://github.com/gmarik/Vundle.vim
 [2]:	https://github.com/gmarik/Vundle.vim
@@ -91,4 +92,6 @@ There are some (just one as of this writing) plugins that need to be built after
 [16]:	http://github.com/majutsushi/tagbar
 [17]:	https://github.com/xolox/vim-easytags
 [18]:	https://github.com/xolox/vim-misc
+[19]:	https://github.com/christophermca/meta5
+[19]:	https://github.com/elzr/vim-json
 [19]:	https://github.com/christophermca/meta5
