@@ -73,10 +73,13 @@ There are some (just one as of this writing) plugins that need to be built after
  - [vim-misc][18]
  - [meta5][19]
  - [vim-json][20]
+ - [vim-monokai][21]
+ - [tabular][22]
+ - [vim-markdown][23]
 
 [1]:	https://github.com/gmarik/Vundle.vim
 [2]:	https://github.com/gmarik/Vundle.vim
-[3]:	https://github.com/neosimsim/vim-latex
+[3]:	https://github.com/vim-latex/vim-latex
 [4]:	https://github.com/oblitum/rainbow
 [5]:	https://github.com/JLimperg/Align
 [6]:	https://github.com/scrooloose/nerdtree
@@ -93,5 +96,7 @@ There are some (just one as of this writing) plugins that need to be built after
 [17]:	https://github.com/xolox/vim-easytags
 [18]:	https://github.com/xolox/vim-misc
 [19]:	https://github.com/christophermca/meta5
-[19]:	https://github.com/elzr/vim-json
-[19]:	https://github.com/christophermca/meta5
+[20]:	https://github.com/elzr/vim-json
+[21]: https://github.com/sickill/vim-monokai
+[22]: https://github.com/godlygeek/tabular
+[23]: https://github.com/plasticboy/vim-markdown

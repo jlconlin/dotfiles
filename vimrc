@@ -9,7 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " My Bundles here:
-Plugin 'neosimsim/vim-latex'
+Plugin 'vim-latex/vim-latex'
 Plugin 'oblitum/rainbow'
 Plugin 'JLimperg/Align'
 " Plugin 'scrooloose/nerdtree'
@@ -25,6 +25,9 @@ Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 Plugin 'christophermca/meta5'
 Plugin 'elzr/vim-json'
+Plugin 'sickill/vim-monokai'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
@@ -51,7 +54,7 @@ set undodir^=~/.vimundo,~/tmp
 :cnoremap <C-A> <home>
 :cnoremap <C-E> <end>
 
-colorscheme meta5       " Use the great colorscheme from christophermca
+" colorscheme meta5       " Use the great colorscheme from christophermca
 
 syntax on
 set shiftwidth=2        " Number of spaces for each step of (auto) indent
