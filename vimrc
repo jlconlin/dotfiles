@@ -13,7 +13,7 @@ Plugin 'vim-latex/vim-latex'
 Plugin 'oblitum/rainbow'
 Plugin 'JLimperg/Align'
 " Plugin 'scrooloose/nerdtree'
-Plugin 'klen/python-mode'
+" Plugin 'klen/python-mode'
 Plugin 'vim-scripts/VisIncr'
 Plugin 'vim-scripts/XML-Folding'
 Plugin 'unblevable/quick-scope'
@@ -129,3 +129,6 @@ nmap <F8> :TagbarToggle<CR>
 " Update easy tags asynchronously
 " This doesn't freeze the window while the tags are updated
 let g:easytags_async=1
+
+" Disable rope. I'm not even sure what it does
+let g:pymode_rope=0
