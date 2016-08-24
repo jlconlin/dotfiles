@@ -25,7 +25,7 @@ set macmeta
 let g:Tex_FoldedSections = 'part,chapter,section,labday,subsection,experiment,'
     \. 'subsubsection,subexperiment,paragraph'
 " Folding environments
-let g:Tex_FoldedEnvironments += ',frame,'
+let g:Tex_FoldedEnvironments = 'frame,columns,column,block,'
 
 " Enable conceal mode
 set cole=2
