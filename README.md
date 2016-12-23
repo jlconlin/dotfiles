@@ -2,7 +2,7 @@
 My personal ViM Configuration files
 
 ## Getting the distribution
-The easiestland probably only-way to get this distribution is by using `git`. Since the [Vundle][1] is a submodule of this repository, it is recommended that you clone recursively
+The easiestland probably only-way to get this distribution is by using `git`. Since the [Vundle](https://github.com/gmarik/Vundle.vim) is a submodule of this repository, it is recommended that you clone recursively
 
 	git clone --recursive https://github.com/jlconlin/ViMConfig.git ~/.vim
 
@@ -40,7 +40,7 @@ My configuration uses a few custom directories to store temporary and backup fil
 If these files are not present, then there will be some minor errors when opening up a file as it won't know what directory to look in for backup, swap, and undos.
 
 ## Plugins
-Plugins are managed by [Vundle][2]. If you cloned recursively then this should be available automatically.
+Plugins are managed by [Vundle](https://github.com/gmarik/Vundle.vim). If you cloned recursively then this should be available automatically.
 
 ### Installing Plugins
 Once the repository has been cloned and configured the plugins can be installed simply by executing:
@@ -55,48 +55,23 @@ There are some (just one as of this writing) plugins that need to be built after
 	make
 ## ViM Plugins used in this distribution
 
- - [vim-latex][3]
- - [rainbow][4]
- - [Align][5]
- - [nerdtree][6]
- - [python-mode][7]
- - [VisIncr][8]
- - [XML-Folding][9]
- - [ENDF.vim][10]
- - [cpp.vim][11]
- - [quick-scope][12]
- - [vimproc][13]
- - [vimshell][14]
- - [SuperTab][15]
- - [Tagbar][16]
- - [vim-easytags][17]
- - [vim-misc][18]
- - [meta5][19]
- - [vim-json][20]
- - [vim-monokai][21]
- - [tabular][22]
- - [vim-markdown][23]
-
-[1]:	https://github.com/gmarik/Vundle.vim
-[2]:	https://github.com/gmarik/Vundle.vim
-[3]:	https://github.com/vim-latex/vim-latex
-[4]:	https://github.com/oblitum/rainbow
-[5]:	https://github.com/JLimperg/Align
-[6]:	https://github.com/scrooloose/nerdtree
-[7]:	https://github.com/klen/python-mode
-[8]:	https://github.com/vim-scripts/VisIncr
-[9]:	https://github.com/vim-scripts/XML-Folding
-[10]:	https://github.com/jlconlin/ENDF.vim
-[11]:	https://github.com/jlconlin/cpp.vim
-[12]:	https://github.com/unblevable/quick-scope
-[13]:	https://github.com/Shougo/vimproc.vim
-[14]:	https://github.com/Shougo/vimshell.vim
-[15]:	https://github.com/ervandew/supertab.git
-[16]:	http://github.com/majutsushi/tagbar
-[17]:	https://github.com/xolox/vim-easytags
-[18]:	https://github.com/xolox/vim-misc
-[19]:	https://github.com/christophermca/meta5
-[20]:	https://github.com/elzr/vim-json
-[21]: https://github.com/sickill/vim-monokai
-[22]: https://github.com/godlygeek/tabular
-[23]: https://github.com/plasticboy/vim-markdown
+ - [vim-latex](https://github.com/vim-latex/vim-latex) Working with LaTeX files.
+ - [rainbow](https://github.com/luochen1990/rainbow) Rainbow highlighting of parantheses.
+ - [Align](https://github.com/JLimperg/Align) Align statements based on regular expression syntax matching
+ - [nerdtree](https://github.com/scrooloose/nerdtree) File browser as a tree
+ - [python-mode](https://github.com/klen/python-mode) Generic Python plugin
+ - [VisIncr](https://github.com/vim-scripts/VisIncr) Facilitates the increasing/decreasing of columnar information.
+ - [XML-Folding](https://github.com/vim-scripts/XML-Folding) Folding for XML.
+ - [ENDF.vim](https://github.com/jlconlin/ENDF.vim) Syntax highlighting/folding for ENDF files.
+ - [cpp.vim](https://github.com/jlconlin/cpp.vim) Personal C++ configuration
+ - [SuperTab](https://github.com/ervandew/supertab.git) Allows you to use `<Tab>` for autocompletion.
+ - [Tagbar](http://github.com/majutsushi/tagbar) Provides an easy way to browse the tags for the current file.
+ - [vim-easytags](https://github.com/xolox/vim-easytags) Automatic tag generation and syntax highlighting.
+ - [vim-misc](https://github.com/xolox/vim-misc) Miscellaneous auto-load scripts.
+ - [meta5](https://github.com/christophermca/meta5) Dark colorscheme.
+ - [vim-json](https://github.com/elzr/vim-json) Better syntax highlighting and folding for JSON files.
+ - [vim-monokai](https://github.com/sickill/vim-monokai) Monokai colorscheme
+ - [vim-markdown](https://github.com/plasticboy/vim-markdown) Syntax highlighting and folding for Markdown files.
+ - [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin) NERDTree plugin to indicate git status of each file.
+ - [vim-airline](https://github.com/bling/vim-airline) Status bar configuration.
+ - [vim-gitgutter](https://github.com/airblade/vim-gitgutter) Provides line-by-line indicator of git status.

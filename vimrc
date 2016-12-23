@@ -10,15 +10,12 @@ Plugin 'VundleVim/Vundle.vim'
 
 " My Bundles here:
 Plugin 'vim-latex/vim-latex'
-Plugin 'oblitum/rainbow'
+Plugin 'luochen1990/rainbow'
 Plugin 'JLimperg/Align'
-" Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 Plugin 'klen/python-mode'
 Plugin 'vim-scripts/VisIncr'
 Plugin 'vim-scripts/XML-Folding'
-Plugin 'unblevable/quick-scope'
-Plugin 'Shougo/vimproc.vim'
-Plugin 'Shougo/vimshell.vim'
 Plugin 'ervandew/supertab.git'
 Plugin 'majutsushi/tagbar'
 Plugin 'xolox/vim-easytags'
@@ -26,8 +23,10 @@ Plugin 'xolox/vim-misc'
 Plugin 'christophermca/meta5'
 Plugin 'elzr/vim-json'
 Plugin 'sickill/vim-monokai'
-Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'bling/vim-airline'
+Plugin 'airblade/vim-gitgutter'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
@@ -110,7 +109,7 @@ nnoremap \Z :set foldexpr=(getline(v:lnum)=~@/)?0:(getline(v:lnum-1)=~@/)\\|\\|(
 autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 
 " Create rainbows
-"let g:rainbow_active = 1
+let g:rainbow_active = 1
 
 " Use CTRL-\ to open a (ctag) definition in a new tab
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
@@ -130,5 +129,18 @@ nmap <F8> :TagbarToggle<CR>
 " This doesn't freeze the window while the tags are updated
 let g:easytags_async=1
 
-" Disable rope. I'm not even sure what it does
-let g:pymode_rope=0
+" ------- NERDTree configuration --------
+" Use Alt-n to open NERDTree
+map <A-n> :NERDTreeToggle<CR>
+" Automatically open NERDTree if no files specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Automatically open NERDTree when vim opens on a directory
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" Close ViM if the only window left open is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" --------- ViM-airline configuration --------
+" Automatically display all buffers when only one tab is open
+let g:airline#extensions#tabline#enabled = 1
