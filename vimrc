@@ -27,6 +27,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
@@ -144,3 +145,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " --------- ViM-airline configuration --------
 " Automatically display all buffers when only one tab is open
 let g:airline#extensions#tabline#enabled = 1
+
+" ------------- YouCompleteMe configuration --------------
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'

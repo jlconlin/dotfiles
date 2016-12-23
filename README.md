@@ -45,14 +45,21 @@ Plugins are managed by [Vundle](https://github.com/gmarik/Vundle.vim). If you cl
 ### Installing Plugins
 Once the repository has been cloned and configured the plugins can be installed simply by executing:
 
-	vim +PluginInstall +qall
+```vim
+vim +PluginInstall +qall
+```
 as described by the installation procedures for Vundle.
 
 ### Building Plugins
-There are some (just one as of this writing) plugins that need to be built after they are installed. Here are the instructions for building each of them.
-#### vimproc
-	cd .vim/bundle/vimproc/
-	make
+There are some (just one as of this writing) plugins that need to be built after they are installed. Here are the instructions for building each of them. **Note:** These instructions are for the Mac as that is the machine I use. These instructions may work for other platforms.
+
+#### YouCompleteMe
+
+```vim
+cd ~/.vim/bundle/YouCompleteMe
+install.py --all
+```
+
 ## ViM Plugins used in this distribution
 
  - [vim-latex](https://github.com/vim-latex/vim-latex) Working with LaTeX files.
@@ -75,3 +82,4 @@ There are some (just one as of this writing) plugins that need to be built after
  - [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin) NERDTree plugin to indicate git status of each file.
  - [vim-airline](https://github.com/bling/vim-airline) Status bar configuration.
  - [vim-gitgutter](https://github.com/airblade/vim-gitgutter) Provides line-by-line indicator of git status.
+ - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) Provides line-by-line indicator of git status.
