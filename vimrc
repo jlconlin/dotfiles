@@ -141,6 +141,8 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 " Close ViM if the only window left open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" Show hidden files (files starting with '.'
+let NERDTreeShowHidden=1
 
 " --------- ViM-airline configuration --------
 " Automatically display all buffers when only one tab is open
@@ -148,3 +150,5 @@ let g:airline#extensions#tabline#enabled = 1
 
 " ------------- YouCompleteMe configuration --------------
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+" Don't do auto completion for these types of files
+let g:ycm_filetype_blacklist = {'tex' : 1, 'markdown' : 1}
