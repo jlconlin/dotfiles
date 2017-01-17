@@ -1,6 +1,7 @@
 set guioptions+=b   " Add bottom scrollbar
 set columns=100
 set lines=75
+set cursorline          " Highlight current line
 
 " Settings unique to Mac
 if has("macunix")

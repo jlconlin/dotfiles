@@ -83,3 +83,4 @@ install.py --all
  - [vim-airline](https://github.com/bling/vim-airline) Status bar configuration.
  - [vim-gitgutter](https://github.com/airblade/vim-gitgutter) Provides line-by-line indicator of git status.
  - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) Provides line-by-line indicator of git status.
+ - [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) Provides integration between ViM and tmux. 

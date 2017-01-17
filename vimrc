@@ -28,6 +28,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'christoomey/vim-tmux-navigator'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
@@ -74,7 +75,6 @@ set textwidth=80        " Make vim automatically wrap at 80 characters
 set matchpairs+=<:>     " Makes vim also match < > as it does other parantheses
 set foldmethod=syntax   " fold code by define syntax
 set undofile            " Make vim do persistent undo
-set cursorline          " Highlight current line
 set vb                  " Use visual bell instead of beeping
 "set autochdir			" automatically change window's cwd to file's dir
 set formatoptions+=nrl  " Automatic formatting options
@@ -108,6 +108,12 @@ nnoremap \Z :set foldexpr=(getline(v:lnum)=~@/)?0:(getline(v:lnum-1)=~@/)\\|\\|(
 " If doing a diff. Upon writing changes to file, automatically update the
 " differences
 autocmd BufWritePost * if &diff == 1 | diffupdate | endif
+
+" Navigate vim splits like a sane person
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 " Create rainbows
 let g:rainbow_active = 1
