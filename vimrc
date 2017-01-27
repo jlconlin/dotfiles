@@ -85,6 +85,7 @@ set ignorecase          " Searching is case insensitive
 set smartcase           " Case insensitive if pattern contains uppercase characters
 set hidden              " Hide a buffer when it is abandoned
 set linebreak           " Break long lines between words 
+set mouse=a             " Enable the use of a te mouse
 
 " Default to horizontal scrollbinding instead of vertical
 set sbo-=ver
