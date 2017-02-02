@@ -85,3 +85,4 @@ install.py --all
  - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) Provides line-by-line indicator of git status.
  - [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) Provides integration between ViM and tmux. 
  - [altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) a colorscheme that looks nice.
+ - [lervag/vimtex](https://github.com/lervag/vimtex) An alternative LaTeX plugin.

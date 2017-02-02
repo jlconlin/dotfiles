@@ -9,7 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " My Bundles here:
-Plugin 'vim-latex/vim-latex'
+"Plugin 'vim-latex/vim-latex'
 Plugin 'luochen1990/rainbow'
 Plugin 'JLimperg/Align'
 "Plugin 'scrooloose/nerdtree'
@@ -30,6 +30,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'lervag/vimtex'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
