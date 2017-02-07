@@ -9,7 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " My Bundles here:
-"Plugin 'vim-latex/vim-latex'
+Plugin 'vim-latex/vim-latex'
 Plugin 'luochen1990/rainbow'
 Plugin 'JLimperg/Align'
 "Plugin 'scrooloose/nerdtree'
@@ -162,6 +162,6 @@ let g:easytags_async=1
 " ------------- YouCompleteMe configuration --------------
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 " Don't do auto completion for these types of files
-let g:ycm_filetype_blacklist = {'tex' : 1, 'markdown' : 1}
+let g:ycm_filetype_blacklist = {'markdown' : 1}
 " Echo the error in the status line
 let g:ycm_echo_current_diagnostic = 1
