@@ -51,7 +51,7 @@ vim +PluginInstall +qall
 as described by the installation procedures for Vundle.
 
 ### Building Plugins
-There are some (just one as of this writing) plugins that need to be built after they are installed. Here are the instructions for building each of them. **Note:** These instructions are for the Mac as that is the machine I use. These instructions may work for other platforms.
+There are some plugins that need to be built after they are installed. Here are the instructions for building each of them. **Note:** These instructions are for the Mac as that is the machine I use. These instructions may work for other platforms.
 
 #### YouCompleteMe
 
@@ -59,6 +59,14 @@ There are some (just one as of this writing) plugins that need to be built after
 cd ~/.vim/bundle/YouCompleteMe
 install.py --all
 ```
+
+#### CoVim
+CoVim requires Python 2.5+ as well as some additional packages. The instructions here use `pip` to install the packages, but I generally use [Conda](https://conda.io/docs/).
+```bash
+pip install twisted argparse service_identity
+```
+Note that `argparse` is part of the standard library for Python 3.2+ and 2.7+.
+
 
 ## ViM Plugins used in this distribution
 
@@ -86,3 +94,5 @@ install.py --all
  - [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) Provides integration between ViM and tmux. 
  - [altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) a colorscheme that looks nice.
  - [lervag/vimtex](https://github.com/lervag/vimtex) An alternative LaTeX plugin.
+ - [FredKSchott/CoVim](https://github.com/FredKSchott/CoVim) Collaborative editing for Vim
+ - [jeetsukumaran/vim-buffergator](https://github.com/jeetsukumaran/vim-buffergator) Listing and selecting Vim buffers.

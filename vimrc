@@ -31,6 +31,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'lervag/vimtex'
+" Plugin 'FredKSchott/CoVim'
+Plugin 'jeetsukumaran/vim-buffergator'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
@@ -90,6 +92,7 @@ set smartcase           " Case insensitive if pattern contains uppercase charact
 set hidden              " Hide a buffer when it is abandoned
 set linebreak           " Break long lines between words 
 set mouse=a             " Enable the use of a te mouse
+set clipboard=unnamed   " Enabling use of system clipboard
 
 " Default to horizontal scrollbinding instead of vertical
 set sbo-=ver
@@ -140,24 +143,6 @@ nmap <F8> :TagbarToggle<CR>
 " Update easy tags asynchronously
 " This doesn't freeze the window while the tags are updated
 let g:easytags_async=1
-
-" ------- NERDTree configuration --------
-"" Use Alt-n to open NERDTree
-"map <A-n> :NERDTreeToggle<CR>
-"" Automatically open NERDTree if no files specified
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-"" Automatically open NERDTree when vim opens on a directory
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-"" Close ViM if the only window left open is NERDTree
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-"" Show hidden files (files starting with '.'
-"let NERDTreeShowHidden=1
-
-" --------- ViM-airline configuration --------
-" Automatically display all buffers when only one tab is open
-"let g:airline#extensions#tabline#enabled = 1
 
 " ------------- YouCompleteMe configuration --------------
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
