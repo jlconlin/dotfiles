@@ -97,3 +97,4 @@ Note that `argparse` is part of the standard library for Python 3.2+ and 2.7+.
  - [FredKSchott/CoVim](https://github.com/FredKSchott/CoVim) Collaborative editing for Vim
  - [jeetsukumaran/vim-buffergator](https://github.com/jeetsukumaran/vim-buffergator) Listing and selecting Vim buffers.
  - [mbbill/undotree](https://github.com/mbbill/undotree) The ultimate undo history visualizer for VIM.
+ - [blueyed/vim-diminactive](https://github.com/blueyed/vim-diminactive) Plugin to dim inactive Vim windows.
