@@ -35,6 +35,7 @@ Plugin 'lervag/vimtex'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'mbbill/undotree'
 Plugin 'blueyed/vim-diminactive'
+Plugin 'tmux-plugins/vim-tmux-focus-events'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
