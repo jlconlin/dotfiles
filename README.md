@@ -6,7 +6,12 @@ Recursively clone this into the `~/.tmux` directory. Then create a link:
 
     ln -s ~/.tmux/tmux.conf ~/.tmux.conf
 
-You'll have to install any plugins as well. I have used [Hombrew]{https://brew.sh} to simplify the installation.
+### Plugins
+Installing the tmux plugins works well enough. Simply execute
+
+    ctrl-b I
+
+This only installs the tmux plugins, not ViM or any other plugins.
 
 ## Plugins
 Listed below are the plugins I use. They are all managed by the [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) which is a git submodule of this repository.
