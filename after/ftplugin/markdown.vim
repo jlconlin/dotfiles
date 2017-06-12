@@ -9,3 +9,4 @@ set breakindentopt=shift:2
 setlocal textwidth=0    " Prevent automatic line breaking in markdown files
 set colorcolumn=0       " Don't highlight any column
 
+command! Marked execute "!open % -a Marked\\ 2"

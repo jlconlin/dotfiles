@@ -99,3 +99,4 @@ Note that `argparse` is part of the standard library for Python 3.2+ and 2.7+.
  - [mbbill/undotree](https://github.com/mbbill/undotree) The ultimate undo history visualizer for VIM.
  - [blueyed/vim-diminactive](https://github.com/blueyed/vim-diminactive) Plugin to dim inactive Vim windows.
  - [tmux-plugins/vim-tmux-focus-events](https://github.com/tmux-plugins/vim-tmux-focus-events) Make terminal vim and tmux work better together.
+ - [trevordmiller/nova-vim](https://github.com/trevordmiller/nova-vim) Nova colorscheme plugin for vim

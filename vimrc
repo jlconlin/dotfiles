@@ -36,6 +36,8 @@ Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'mbbill/undotree'
 Plugin 'blueyed/vim-diminactive'
 Plugin 'tmux-plugins/vim-tmux-focus-events'
+Plugin 'mauromorales/vim-remark'
+Plugin 'trevordmiller/nova-vim'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
@@ -63,7 +65,8 @@ set undodir^=~/.vimundo,~/tmp
 :cnoremap <C-E> <end>
 
 set bg=dark
-colorscheme solarized
+colorscheme nova
+" colorscheme solarized
 " colorscheme meta5       " Use the great colorscheme from christophermca
 
 syntax on
