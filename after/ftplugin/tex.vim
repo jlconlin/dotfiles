@@ -108,3 +108,6 @@ let g:Tex_Env_block = "\\begin{block}{<++>}\<CR><++>\<CR>\\end{block}"
 
 " Options for FastFold
 let g:tex_fold_enabled = 1  " Update tex folds when saving file
+
+" Turn off indication of indents
+let g:indentLine_enabled = 0
