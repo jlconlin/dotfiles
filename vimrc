@@ -40,7 +40,7 @@ Plugin 'mauromorales/vim-remark'
 Plugin 'trevordmiller/nova-vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-commentary'
-Plugin 'bash-support.vim'
+Plugin 'WolfgangMehner/bash-support'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
