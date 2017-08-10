@@ -41,6 +41,7 @@ Plugin 'trevordmiller/nova-vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-commentary'
 Plugin 'WolfgangMehner/bash-support'
+Plugin 'johngrib/vim-game-code-break'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
@@ -104,7 +105,7 @@ set hidden              " Hide a buffer when it is abandoned
 set linebreak           " Break long lines between words 
 set mouse=a             " Enable the use of a te mouse
 set clipboard=unnamed   " Enabling use of system clipboard
-set synmaxcol=100       " Don't syntax highlight beyond 100th column
+" set synmaxcol=100       " Don't syntax highlight beyond 100th column
 set wildmenu            " Allow tab completion of vim options
 set wildmode=full
 
