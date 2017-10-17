@@ -26,8 +26,8 @@ Plugin 'sickill/vim-monokai'
 Plugin 'plasticboy/vim-markdown'
 "Plugin 'Xuyuanp/nerdtree-git-plugin'
 "Plugin 'bling/vim-airline'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'airblade/vim-gitgutter'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'lervag/vimtex'
@@ -42,6 +42,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-commentary'
 Plugin 'WolfgangMehner/bash-support'
 Plugin 'johngrib/vim-game-code-break'
+Plugin 'chrisbra/csv.vim'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
