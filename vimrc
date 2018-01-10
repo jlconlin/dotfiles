@@ -43,6 +43,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'WolfgangMehner/bash-support'
 Plugin 'johngrib/vim-game-code-break'
 Plugin 'chrisbra/csv.vim'
+Plugin 'Konfekt/FastFold'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
