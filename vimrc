@@ -32,7 +32,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'lervag/vimtex'
 " Plugin 'FredKSchott/CoVim'
-Plugin 'jeetsukumaran/vim-buffergator'
+" Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'mbbill/undotree'
 " Plugin 'blueyed/vim-diminactive'
 " Plugin 'tmux-plugins/vim-tmux-focus-events'
@@ -43,6 +43,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'WolfgangMehner/bash-support'
 Plugin 'johngrib/vim-game-code-break'
 Plugin 'chrisbra/csv.vim'
+Plugin 'Konfekt/FastFold'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
@@ -54,14 +55,14 @@ filetype plugin indent on    " required
 
 " Set where to store the backup files
 set backupdir-=.
-set backupdir^=~/.vimbackup,~/tmp
+set backupdir^=~/.vim/backup,~/tmp
 
 " Set where to store the swap files
-set directory=~/.vimswap,~/tmp
+set directory=~/.vim/swap,~/tmp
 
 " Set where to store the undo files
 set undodir-=.
-set undodir^=~/.vimundo,~/tmp
+set undodir^=~/.vim/undo,~/tmp
 
 " Commands to make moving through command line like in the terminal
 :cnoremap <M-B> <s-left>

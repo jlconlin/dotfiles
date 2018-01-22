@@ -13,6 +13,7 @@ let g:vimtex_fold_sections = [
     \ 'section', 'labday',
     \ 'subsection', 'experiment',
     \ 'subsubsection', 'subexperiment',
+    \ 'subsubsection',
   \ ]
 
 " Using Skim as a previewer
@@ -74,12 +75,12 @@ set macmeta
 
 " Folding sections
 let g:Tex_FoldedSections = 'part,chapter,section,labday,subsection,experiment,'
-    \. 'subsubsection,subexperiment,paragraph'
+    \. 'subsubsection,subsubsubsection,subexperiment,paragraph'
 " Folding environments
-let g:Tex_FoldedEnvironments = 'frame,columns,column,block,'
+let g:Tex_FoldedEnvironments = 'frame,columns,column,block,minted,'
 
 " Enable conceal mode
-set cole=2
+set cole=0
 hi Conceal guibg=white guifg=black 
 
 " Indent really long lines (but they are not really indented)
@@ -91,20 +92,18 @@ call IMAP (g:Tex_Leader.'I', "\\int_{<++>}^{<++>} <++> d<++>", 'tex')
 call IMAP (g:Tex_Leader.'i', "\\int <++> d<++>", 'tex')
 call IMAP ('_', '_{<++>}<++>', 'tex')
 call IMAP ('^', '^{<++>}<++>', 'tex')
+
 call IMAP ('\iso', '\isotope[<++>]{<++>}<++>', 'tex')
 call IMAP ('\SI', '\SI{<++>}{\<++>}<++>', 'tex')
 call IMAP ('\si', '\si{\<++>}<++>', 'tex')
 call IMAP ('\num', '\num{<++>}<++>', 'tex')
 
-set makeprg="latexmk -pdf -pv"
-
 let g:Tex_PromptedEnvironments = 'split,subequations,equation,equation*,\[,$$,align,align*'
 
 let g:Tex_Env_frame = "\\begin{frame}{<++>}\<CR><++>\<CR>\\end{frame}"
-
 let g:Tex_Env_columns = "\\begin{columns}[c]\<CR>\\begin{column}{0.5\\textwidth}\<CR><++>\<CR>\\end{column}\<CR>\<CR>\\begin{column}{0.5\\textwidth}\<CR><++>\<CR>\\end{column}\<CR>\\end{columns}"
-
 let g:Tex_Env_block = "\\begin{block}{<++>}\<CR><++>\<CR>\\end{block}"
+let g:Tex_Env_minted = "\\begin{minted}[<++>]{<++>}\<CR><++>\<CR>\\end{minted}"
 
 " Options for FastFold
 let g:tex_fold_enabled = 1  " Update tex folds when saving file

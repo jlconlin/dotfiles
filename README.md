@@ -104,3 +104,4 @@ Note that `argparse` is part of the standard library for Python 3.2+ and 2.7+.
  - [tpope/vim-commentary](https://github.com/tpope/vim-commentary) commentary.vim: comment stuff out
  - [WolfgangMehner/bash-supprt](https://github.com/vim-scripts/bash-support.vim) Edit Bash scripts in Vim/gVim. Insert code snippets, run, check, and debug the code and look up help.
  - [johngrib/vim-game-code-break](https://github.com/johngrib/vim-game-code-break) Block-breaking game in vim 8.0
+ - [Konfekt/FastFold](https://github.com/Konfekt/FastFold) Speed up Vim by updating folds only when called-for.
