@@ -24,8 +24,8 @@ Plugin 'christophermca/meta5'
 Plugin 'elzr/vim-json'
 Plugin 'sickill/vim-monokai'
 Plugin 'plasticboy/vim-markdown'
-"Plugin 'Xuyuanp/nerdtree-git-plugin'
-"Plugin 'bling/vim-airline'
+" Plugin 'Xuyuanp/nerdtree-git-plugin'
+" Plugin 'bling/vim-airline'
 " Plugin 'airblade/vim-gitgutter'
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'christoomey/vim-tmux-navigator'
@@ -38,12 +38,13 @@ Plugin 'mbbill/undotree'
 " Plugin 'tmux-plugins/vim-tmux-focus-events'
 Plugin 'mauromorales/vim-remark'
 Plugin 'trevordmiller/nova-vim'
-Plugin 'Yggdroot/indentLine'
+" Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-commentary'
 Plugin 'WolfgangMehner/bash-support'
 Plugin 'johngrib/vim-game-code-break'
 Plugin 'chrisbra/csv.vim'
 Plugin 'Konfekt/FastFold'
+Plugin 'fenetikm/falcon'
 
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
@@ -71,7 +72,8 @@ set undodir^=~/.vim/undo,~/tmp
 :cnoremap <C-E> <end>
 
 set bg=dark
-colorscheme nova
+colorscheme falcon
+" colorscheme nova
 " colorscheme solarized
 " colorscheme meta5       " Use the great colorscheme from christophermca
 
@@ -117,7 +119,6 @@ set sbo+=hor
 
 " Set options when saving a session
 set sessionoptions=blank,curdir,folds,help,options,resize,tabpages,winsize
-set colorcolumn=81      " Highlight the 81st column
 
 " Settings unique to Mac
 if has("macunix")
@@ -147,8 +148,8 @@ nnoremap <c-l> <c-w>l
 let g:rainbow_active = 1
 
 " Use local colorscheme for indent lines
-let g:indentLine_setColors = 0
-let g:indentLine_char = '│'
+" let g:indentLine_setColors = 0
+" let g:indentLine_char = '│'
 
 " Use CTRL-\ to open a (ctag) definition in a new tab
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
