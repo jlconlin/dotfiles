@@ -10,7 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " My Bundles here:
 Plugin 'vim-latex/vim-latex'
-Plugin 'luochen1990/rainbow'
+" Plugin 'luochen1990/rainbow'
 Plugin 'JLimperg/Align'
 "Plugin 'scrooloose/nerdtree'
 Plugin 'klen/python-mode'
@@ -143,9 +143,6 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-
-" Create rainbows
-let g:rainbow_active = 1
 
 " Use local colorscheme for indent lines
 " let g:indentLine_setColors = 0
