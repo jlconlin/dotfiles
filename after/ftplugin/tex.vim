@@ -17,29 +17,29 @@ let g:vimtex_fold_sections = [
   \ ]
 
 " Using Skim as a previewer
-let g:vimtex_view_general_viewer
-      \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
-let g:vimtex_view_general_options = '-r @line @pdf @tex'
+" let g:vimtex_view_general_viewer
+"       \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+" let g:vimtex_view_general_options = '-r @line @pdf @tex'
 
 " This adds a callback hook that updates Skim after compilation
-let g:vimtex_latexmk_callback_hooks = ['UpdateSkim']
-function! UpdateSkim(status)
-  if !a:status | return | endif
+" let g:vimtex_latexmk_callback_hooks = ['UpdateSkim']
+" function! UpdateSkim(status)
+"   if !a:status | return | endif
 
-  let l:out = b:vimtex.out()
-  let l:tex = expand('%:p')
-  let l:cmd = [g:vimtex_view_general_viewer, '-r']
-  if !empty(system('pgrep Skim'))
-    call extend(l:cmd, ['-g'])
-  endif
-  if has('nvim')
-    call jobstart(l:cmd + [line('.'), l:out, l:tex])
-  elseif has('job')
-    call job_start(l:cmd + [line('.'), l:out, l:tex])
-  else
-    call system(join(l:cmd + [line('.'), shellescape(l:out), shellescape(l:tex)], ' '))
-  endif
-endfunction
+"   let l:out = b:vimtex.out()
+"   let l:tex = expand('%:p')
+"   let l:cmd = [g:vimtex_view_general_viewer, '-r']
+"   if !empty(system('pgrep Skim'))
+"     call extend(l:cmd, ['-g'])
+"   endif
+"   if has('nvim')
+"     call jobstart(l:cmd + [line('.'), l:out, l:tex])
+"   elseif has('job')
+"     call job_start(l:cmd + [line('.'), l:out, l:tex])
+"   else
+"     call system(join(l:cmd + [line('.'), shellescape(l:out), shellescape(l:tex)], ' '))
+"   endif
+" endfunction
 
 " Options for YouCompleteMe
 if !exists('g:ycm_semantic_triggers')
@@ -58,7 +58,6 @@ let g:ycm_semantic_triggers.tex = [
 
 "setlocal formatoptions -= t
 
-let Tex_ViewRule_pdf = '/Applications/Preview.app $*.pdf'
 set makeprg="latexmk -pdf -pv"
 
 " If disabled (set to 0) LaTeX-Suite doesn't go immediately to warnings or
@@ -110,3 +109,7 @@ let g:tex_fold_enabled = 1  " Update tex folds when saving file
 
 " Turn off indication of indents
 let g:indentLine_enabled = 0
+
+" Commands to help with converting united numbers to use siunitx
+nmap <C-i> c2aW<C-R>=substitute(@", '\v(\S+)\s+(\S+)', '\\SI{\1}{\2}', '')<CR><ESC>2hvF{l
+vmap <C-i> c<C-R>=substitute(@", '\v(\S+)\s+(\S+)', '\\SI{\1}{\2}', '')<CR><ESC>hvF{l

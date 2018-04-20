@@ -167,11 +167,12 @@ let g:easytags_events = ['BufWritePost']
 let g:easytags_async=1
 
 " ------------- YouCompleteMe configuration --------------
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-" Don't do auto completion for these types of files
-let g:ycm_filetype_blacklist = {'markdown' : 1}
-let g:ycm_confirm_extra_conf = 0
-" Echo the error in the status line
-let g:ycm_echo_current_diagnostic = 1
-" Turn off pop-up completer *and* semantic triggers
-let g:ycm_auto_trigger = 0
+" let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+" " Don't do auto completion for these types of files
+" let g:ycm_filetype_blacklist = {'markdown' : 1}
+" let g:ycm_confirm_extra_conf = 0
+" " Echo the error in the status line
+" let g:ycm_echo_current_diagnostic = 1
+" " Turn off pop-up completer *and* semantic triggers
+" let g:ycm_auto_trigger = 0
+"
