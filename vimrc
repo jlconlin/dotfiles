@@ -32,10 +32,10 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'lervag/vimtex'
 " Plugin 'FredKSchott/CoVim'
-" Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'mbbill/undotree'
 " Plugin 'blueyed/vim-diminactive'
-" Plugin 'tmux-plugins/vim-tmux-focus-events'
+Plugin 'tmux-plugins/vim-tmux-focus-events'
 Plugin 'mauromorales/vim-remark'
 Plugin 'trevordmiller/nova-vim'
 " Plugin 'Yggdroot/indentLine'
@@ -72,7 +72,7 @@ set undodir^=~/.vim/undo,~/tmp
 :cnoremap <C-E> <end>
 
 set bg=dark
-colorscheme falcon
+" colorscheme falcon
 " colorscheme nova
 " colorscheme solarized
 " colorscheme meta5       " Use the great colorscheme from christophermca
