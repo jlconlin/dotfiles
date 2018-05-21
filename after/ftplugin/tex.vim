@@ -1,6 +1,7 @@
 set wrap
 set linebreak
 set spell
+setlocal synmaxcol=0    " Highlight the entire line of text
 setlocal textwidth=0    " Prevent automatic line breaking in TeX files
 set colorcolumn=0       " Don't highlight any column
 
