@@ -8,7 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" Plugin 'vim-latex/vim-latex'
+Plugin 'vim-latex/vim-latex'
 
 " Colorscheme plugins
 Plugin 'trevordmiller/nova-vim'
