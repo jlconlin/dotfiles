@@ -8,10 +8,37 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'JLimperg/Align'
+Plugin 'vim-scripts/VisIncr'
+Plugin 'ervandew/supertab.git'
+Plugin 'tpope/vim-commentary'
+Plugin 'Konfekt/FastFold'
+ 
+" Language-specific plugins
 Plugin 'vim-latex/vim-latex'
-
+Plugin 'lervag/vimtex'
+Plugin 'vim-scripts/XML-Folding'
+Plugin 'elzr/vim-json'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'sheerun/vim-polyglot'
+ 
+ " Tags
+Plugin 'majutsushi/tagbar'
+Plugin 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc'
+ 
 " Colorscheme plugins
 Plugin 'trevordmiller/nova-vim'
+Plugin 'fenetikm/falcon'
+Plugin 'christophermca/meta5'
+Plugin 'sickill/vim-monokai'
+Plugin 'altercation/vim-colors-solarized'
+ 
+" Personal plugins
+Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
+Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -19,7 +46,9 @@ filetype plugin indent on    " required
 
 syntax on               " Enable syntax highlighting
 colorscheme nova
-set synmaxcol=100       " Don't syntax higlight beyond 100th column
+set bg=dark
+" set synmaxcol=100       " Don't syntax higlight beyond 100th column
+let g:polyglot_disabled = ['latex']
 
 set encoding=utf-8      " Set the default file encoding to UTF-8
 set autoread            " Automatically read a file that has been changed
@@ -53,6 +82,14 @@ set wildmode=full       " Complete the next full match
 set vb                  " Use visual bell instead of beeping
 set sbo-=ver            " Default to horizontal scrollbinding instead of vertical
 set sbo+=hor
+
+set sessionoptions=blank,curdir,folds,help,options,resize,tabpages,winsize
+set printoptions=paper:letter,number:y,duplex:off,left:5pc
+
+" Settings unique to Mac
+if has("macunix")
+  set macmeta             " use Mac's option key as meta
+endif
 
 " Navigate vim splits like a sane person
 nnoremap <c-j> <c-w>j
@@ -120,4 +157,3 @@ set backupdir =$HOME/.vim/files/backup/
 set directory =$HOME/.vim/files/swap/
 set undofile
 set undodir   =$HOME/.vim/files/undo/
-
