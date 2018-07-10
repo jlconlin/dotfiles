@@ -45,6 +45,7 @@ There are some plugins that need to be built after they are installed. Here are 
  - [vim-markdown](https://github.com/plasticboy/vim-markdown) Syntax highlighting and folding for Markdown files.
  - [tpope/vim-commentary](https://github.com/tpope/vim-commentary) commentary.vim: comment stuff out
  - [Konfekt/FastFold](https://github.com/Konfekt/FastFold) Speed up Vim by updating folds only when called-for.
+ - [wincent/command-t](https://github.com/wincent/command-t) Fast file navigation
 
 ## My personal plugins
  - [ENDF.vim](https://github.com/jlconlin/ENDF.vim) Syntax highlighting/folding for ENDF files.

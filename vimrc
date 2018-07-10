@@ -1,6 +1,21 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" Navigate vim splits like a sane person
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
+" Commands to make moving through command line like in the terminal
+:cnoremap <M-B> <s-left>
+:cnoremap <M-F> <s-right>
+:cnoremap <C-A> <home>
+:cnoremap <C-E> <end>
+
+let mapleader="\\"
+map <C-D> <Plug>IMAP_JumpForward
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -15,7 +30,8 @@ Plugin 'vim-scripts/VisIncr'
 Plugin 'ervandew/supertab.git'
 Plugin 'tpope/vim-commentary'
 Plugin 'Konfekt/FastFold'
- 
+Plugin 'wincent/command-t'
+
 " Language-specific plugins
 Plugin 'vim-latex/vim-latex'
 Plugin 'lervag/vimtex'
@@ -23,18 +39,19 @@ Plugin 'vim-scripts/XML-Folding'
 Plugin 'elzr/vim-json'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'sheerun/vim-polyglot'
- 
- " Tags
+Plugin 'klen/python-mode'
+
+" Tags
 Plugin 'majutsushi/tagbar'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
- 
+
 " Colorscheme plugins
 Plugin 'trevordmiller/nova-vim'
-Plugin 'fenetikm/falcon'
-Plugin 'christophermca/meta5'
-Plugin 'sickill/vim-monokai'
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'fenetikm/falcon'
+" Plugin 'christophermca/meta5'
+" Plugin 'sickill/vim-monokai'
+" Plugin 'altercation/vim-colors-solarized'
  
 " Personal plugins
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
@@ -46,7 +63,7 @@ filetype plugin indent on    " required
 
 syntax on               " Enable syntax highlighting
 colorscheme nova
-set bg=dark
+
 " set synmaxcol=100       " Don't syntax higlight beyond 100th column
 let g:polyglot_disabled = ['latex']
 
@@ -90,18 +107,6 @@ set printoptions=paper:letter,number:y,duplex:off,left:5pc
 if has("macunix")
   set macmeta             " use Mac's option key as meta
 endif
-
-" Navigate vim splits like a sane person
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
-" Commands to make moving through command line like in the terminal
-:cnoremap <M-B> <s-left>
-:cnoremap <M-F> <s-right>
-:cnoremap <C-A> <home>
-:cnoremap <C-E> <end>
 
 " Fold based on a regular expression After searching, fold those things not
 " found, by issuing the command '\z' (without quotes, of course)
