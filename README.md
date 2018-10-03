@@ -46,6 +46,10 @@ There are some plugins that need to be built after they are installed. Here are 
  - [tpope/vim-commentary](https://github.com/tpope/vim-commentary) commentary.vim: comment stuff out
  - [Konfekt/FastFold](https://github.com/Konfekt/FastFold) Speed up Vim by updating folds only when called-for.
  - [wincent/command-t](https://github.com/wincent/command-t) Fast file navigation
+ - [vim-voom/VOoM](https://github.com/vim-voom/VOoM) Vim Outliner of Markups
+ - [gu-fan/riv.vim](https://github.com/gu-fan/riv.vim) Vim plugin for taking notes in reStructuredText
+ - [https://github.com/gu-fan/InstantRst](https://github.com/gu-fan/InstantRst) Instant reStructuredText preview in browser.
+- [previm/previm](https://github.com/previm/previm) Realtime preview by Vim.
 
 ## My personal plugins
  - [ENDF.vim](https://github.com/jlconlin/ENDF.vim) Syntax highlighting/folding for ENDF files.

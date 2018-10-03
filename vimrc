@@ -31,6 +31,10 @@ Plugin 'ervandew/supertab.git'
 Plugin 'tpope/vim-commentary'
 Plugin 'Konfekt/FastFold'
 Plugin 'wincent/command-t'
+Plugin 'vim-voom/VOoM'
+Plugin 'previm/previm'
+" Plugin 'gu-fan/riv.vim'
+" Plugin 'gu-fan/InstantRst'
 
 " Language-specific plugins
 Plugin 'vim-latex/vim-latex'
@@ -39,7 +43,7 @@ Plugin 'vim-scripts/XML-Folding'
 Plugin 'elzr/vim-json'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'klen/python-mode'
+Plugin 'python-mode/python-mode'
 
 " Tags
 Plugin 'majutsushi/tagbar'
@@ -112,6 +116,8 @@ endif
 " found, by issuing the command '\z' (without quotes, of course)
 nnoremap \z :setlocal foldexpr=(getline(v:lnum)=~@/)?0:(getline(v:lnum-1)=~@/)\\|\\|(getline(v:lnum+1)=~@/)?1:2 foldmethod=expr foldlevel=0 foldcolumn=2<CR>
 nnoremap \Z :set foldexpr=(getline(v:lnum)=~@/)?0:(getline(v:lnum-1)=~@/)\\|\\|(getline(v:lnum+1)=~@/)?1:2 foldmethod=expr foldlevel=0 foldcolumn=2<CR>
+
+command Vterm :vert term
 
 " If doing a diff. Upon writing changes to file, automatically update the
 " differences
