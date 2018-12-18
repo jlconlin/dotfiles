@@ -34,6 +34,7 @@ Plugin 'wincent/command-t'
 Plugin 'vim-voom/VOoM'
 Plugin 'previm/previm'
 Plugin 'luochen1990/rainbow'
+Plugin 'wincent/terminus'
 
 " Language-specific plugins
 Plugin 'vim-latex/vim-latex'
