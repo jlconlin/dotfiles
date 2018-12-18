@@ -50,6 +50,7 @@ There are some plugins that need to be built after they are installed. Here are 
  - [gu-fan/riv.vim](https://github.com/gu-fan/riv.vim) Vim plugin for taking notes in reStructuredText
  - [https://github.com/gu-fan/InstantRst](https://github.com/gu-fan/InstantRst) Instant reStructuredText preview in browser.
 - [previm/previm](https://github.com/previm/previm) Realtime preview by Vim.
+- [luochen1990/rainbow](https://github.com/luochen1990/rainbow) Rainbow Parentheses Improved, shorter code, no level limit, smooth and fast, powerful configuration.
 
 ## My personal plugins
  - [ENDF.vim](https://github.com/jlconlin/ENDF.vim) Syntax highlighting/folding for ENDF files.

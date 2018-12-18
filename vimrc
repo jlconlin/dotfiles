@@ -33,8 +33,7 @@ Plugin 'Konfekt/FastFold'
 Plugin 'wincent/command-t'
 Plugin 'vim-voom/VOoM'
 Plugin 'previm/previm'
-" Plugin 'gu-fan/riv.vim'
-" Plugin 'gu-fan/InstantRst'
+Plugin 'luochen1990/rainbow'
 
 " Language-specific plugins
 Plugin 'vim-latex/vim-latex'
@@ -125,6 +124,8 @@ autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 
 " Set a better commentstring for some filetypes
 autocmd FileType c,cpp,h,hpp,cs,java setlocal commentstring=//\ %s
+
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 let g:tex_flavor='latex'
 
