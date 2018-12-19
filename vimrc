@@ -36,6 +36,12 @@ Plugin 'previm/previm'
 Plugin 'luochen1990/rainbow'
 Plugin 'wincent/terminus'
 
+" NERDTree related stuff
+Plugin 'scrooloose/nerdtree'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+
 " Language-specific plugins
 Plugin 'vim-latex/vim-latex'
 Plugin 'lervag/vimtex'
@@ -52,10 +58,11 @@ Plugin 'xolox/vim-misc'
 
 " Colorscheme plugins
 Plugin 'trevordmiller/nova-vim'
-" Plugin 'fenetikm/falcon'
-" Plugin 'christophermca/meta5'
-" Plugin 'sickill/vim-monokai'
-" Plugin 'altercation/vim-colors-solarized'
+Plugin 'fenetikm/falcon'
+Plugin 'christophermca/meta5'
+Plugin 'sickill/vim-monokai'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'abra/vim-obsidian'
  
 " Personal plugins
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
@@ -66,12 +73,12 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 syntax on               " Enable syntax highlighting
-colorscheme nova
+colorscheme obsidian
 
 " set synmaxcol=100       " Don't syntax higlight beyond 100th column
 let g:polyglot_disabled = ['latex']
 
-set encoding=utf-8      " Set the default file encoding to UTF-8
+set encoding=UTF-8      " Set the default file encoding to UTF-8
 set autoread            " Automatically read a file that has been changed
 set backspace=indent,eol,start  " backspace through everything in insert mode
 set nowrap              " Don't wrap lines
@@ -130,25 +137,18 @@ let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 let g:tex_flavor='latex'
 
-" Where ViM should search for ctags
-if !isdirectory($HOME.'/.vim/ctags') && exists('*mkdir')
-  call mkdir($HOME.'/.vim/ctags')
-endif
-set tags=~/.vim/ctags
+" Turn off NETRW plugin
+let loaded_netrwPlugin = 1
 
-" Use CTRL-\ to open a (ctag) definition in a new tab
-map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-" Use Alt-] to open a (ctag) definition in a vertical split
-map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+" Toggle NERDTree
+map <C-n> :NERDTreeToggle<CR>
+autocmd StdinReadPre * let s:std_in=1
+" Open NERDTree if no files are given
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Open NERDTree if directory is given
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" Close ViM if only NERDTree is open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Show the tags for the current file
-nmap <F8> :TagbarToggle<CR>
-
-" Update the ctags whenever a file is saved
-let g:easytags_events = ['BufWritePost']
-
-" Update easy tags asynchronously
-" This doesn't freeze the window while the tags are updated
-let g:easytags_async=1
-
+source ~/.vim/tags.vim
 source ~/.vim/vimdirs.vim
