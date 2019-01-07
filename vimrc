@@ -138,7 +138,7 @@ let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 let g:tex_flavor='latex'
 
 " Turn off NETRW plugin
-let loaded_netrwPlugin = 1
+" let loaded_netrwPlugin = 1
 
 " Toggle NERDTree
 map <C-n> :NERDTreeToggle<CR>
