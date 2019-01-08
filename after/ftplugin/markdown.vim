@@ -9,6 +9,12 @@ set breakindentopt=shift:2
 setlocal textwidth=0    " Prevent automatic line breaking in markdown files
 set colorcolumn=0       " Don't highlight any column
 
+function OpenInMarked2()
+  !open % -a Marked\ 2.app 
+endfunction
+
 command! Marked execute "!open % -a Marked\\ 2"
+
+nmap <silent> <leader>m :call OpenInMarked2() <CR> <CR>
 
 " set conceallevel=0
