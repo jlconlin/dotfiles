@@ -10,7 +10,7 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " Toggle tagbar
-nmap <C-m> :TagbarToggle<CR>
+" nmap <C-m> :TagbarToggle<CR>
 
 " Update the ctags whenever a file is saved
 let g:easytags_events = ['BufWritePost']

@@ -6,6 +6,7 @@ setlocal textwidth=0    " Prevent automatic line breaking in TeX files
 setlocal shiftwidth=2
 set colorcolumn=0       " Don't highlight any column
 
+EnableAutocorrect
 
 let g:vimtex_format_enabled = 1
 let g:vimtex_fold_enabled = 1
@@ -63,7 +64,7 @@ set macmeta
 let g:Tex_FoldedSections = 'part,chapter,section,labday,subsection,experiment,'
     \. 'subsubsection,subsubsubsection,subexperiment,paragraph'
 " Folding environments
-let g:Tex_FoldedEnvironments = 'frame,columns,column,block,minted,'
+let g:Tex_FoldedEnvironments = 'frame,columns,column,block,minted,tikzpicture'
 
 " Enable conceal mode
 set cole=0

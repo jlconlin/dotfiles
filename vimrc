@@ -35,12 +35,14 @@ Plugin 'vim-voom/VOoM'
 Plugin 'previm/previm'
 Plugin 'luochen1990/rainbow'
 Plugin 'wincent/terminus'
+" Plugin 'TaDaa/vimade'
+Plugin 'sedm0784/vim-you-autocorrect'
 
 " NERDTree related stuff
-Plugin 'scrooloose/nerdtree'
-Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plugin 'ryanoasis/vim-devicons'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+" Plugin 'scrooloose/nerdtree'
+" Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+" Plugin 'ryanoasis/vim-devicons'
+" Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " Language-specific plugins
 Plugin 'vim-latex/vim-latex'
@@ -52,9 +54,9 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'python-mode/python-mode'
 
 " Tags
-Plugin 'majutsushi/tagbar'
-Plugin 'xolox/vim-easytags'
-Plugin 'xolox/vim-misc'
+" Plugin 'majutsushi/tagbar'
+" Plugin 'xolox/vim-easytags'
+" Plugin 'xolox/vim-misc'
 
 " Colorscheme plugins
 Plugin 'trevordmiller/nova-vim'
@@ -141,14 +143,17 @@ let g:tex_flavor='latex'
 " let loaded_netrwPlugin = 1
 
 " Toggle NERDTree
-map <C-n> :NERDTreeToggle<CR>
-autocmd StdinReadPre * let s:std_in=1
+" map <C-n> :NERDTreeToggle<CR>
+" autocmd StdinReadPre * let s:std_in=1
 " Open NERDTree if no files are given
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Open NERDTree if directory is given
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 " Close ViM if only NERDTree is open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+let g:vimade = {}
+let g:vimade.fadelevel = 0.7
 
 source ~/.vim/tags.vim
 source ~/.vim/vimdirs.vim

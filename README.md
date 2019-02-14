@@ -55,7 +55,7 @@ There are some plugins that need to be built after they are installed. Here are 
 - [wincent/command-t](https://github.com/wincent/command-t) Fast file navigation
 - [vim-voom/VOoM](https://github.com/vim-voom/VOoM) Vim Outliner of Markups
 - [gu-fan/riv.vim](https://github.com/gu-fan/riv.vim) Vim plugin for taking notes in reStructuredText
-- [https://github.com/gu-fan/InstantRst](https://github.com/gu-fan/InstantRst) Instant reStructuredText preview in browser.
+- [gu-fan/InstantRst](https://github.com/gu-fan/InstantRst) Instant reStructuredText preview in browser.
 - [previm](https://github.com/previm/previm) Realtime preview by Vim.
 - [rainbow](https://github.com/luochen1990/rainbow) Rainbow Parentheses Improved, shorter code, no level limit, smooth and fast, powerful configuration.
 - [terminus](https://github.com/wincent/terminus) Enhanced terminal integration for Vim
@@ -64,14 +64,15 @@ There are some plugins that need to be built after they are installed. Here are 
 - [vim-nerdtree-syntax-highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight) Extra syntax and highlight for nerdtree files
 - [vim-devicons](https://github.com/ryanoasis/vim-devicons) 🔣 Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more
 - [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin) A plugin of NERDTree showing git status
-
+- [TaDaa/vimade](https://github.com/TaDaa/vimade) An eye friendly plugin that fades your inactive buffers and preserves your syntax highlighting!
+- [sedm0784/vim-you-autocorrect](https://github.com/sedm0784/vim-you-autocorrect) Why should smartphones get all the fun?
 
 ## My personal plugins
  - [ENDF.vim](https://github.com/jlconlin/ENDF.vim) Syntax highlighting/folding for ENDF files.
  - [cpp.vim](https://github.com/jlconlin/cpp.vim) Personal C++ configuration
 
 ## Colorscheme plugins
- - [com/trevordmiller/nova-vim) Nova colorscheme plugin for vim
+ - [trevordmiller/nova-vim) Nova colorscheme plugin for vim
  - [falcon](https://github.com/fenetikm/falcon) Falcon colorscheme for Vim and various terminals
  - [meta5](https://github.com/christophermca/meta5) Dark colorscheme.
  - [vim-monokai](https://github.com/sickill/vim-monokai) Monokai colorscheme
