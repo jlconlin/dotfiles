@@ -74,6 +74,7 @@ Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+let fortran_free_source=1
 syntax on               " Enable syntax highlighting
 colorscheme obsidian
 
