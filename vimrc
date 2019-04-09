@@ -37,6 +37,7 @@ Plugin 'luochen1990/rainbow'
 Plugin 'wincent/terminus'
 " Plugin 'TaDaa/vimade'
 Plugin 'sedm0784/vim-you-autocorrect'
+Plugin 'AndrewRadev/linediff.vim'
 
 " NERDTree related stuff
 " Plugin 'scrooloose/nerdtree'
