@@ -77,7 +77,7 @@ filetype plugin indent on    " required
 
 let fortran_free_source=1
 syntax on               " Enable syntax highlighting
-colorscheme obsidian
+colorscheme nova
 
 " set synmaxcol=100       " Don't syntax higlight beyond 100th column
 let g:polyglot_disabled = ['latex']
