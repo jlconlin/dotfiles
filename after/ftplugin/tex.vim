@@ -6,7 +6,7 @@ setlocal textwidth=0    " Prevent automatic line breaking in TeX files
 setlocal shiftwidth=2
 set colorcolumn=0       " Don't highlight any column
 
-EnableAutocorrect
+" EnableAutocorrect
 
 let g:vimtex_format_enabled = 1
 let g:vimtex_fold_enabled = 1
