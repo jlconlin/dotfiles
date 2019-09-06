@@ -79,3 +79,4 @@ There are some plugins that need to be built after they are installed. Here are 
  - [vim-monokai](https://github.com/sickill/vim-monokai) Monokai colorscheme
  - [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) a colorscheme that looks nice.
  - [vim-obsidian](https://github.com/abra/vim-obsidian) Obsidian is a colorscheme for Vim
+ - [dracula/vim](https://github.com/dracula/vim) 😱 A dark theme for Vim 
