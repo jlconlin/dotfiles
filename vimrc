@@ -67,6 +67,7 @@ Plugin 'sickill/vim-monokai'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'abra/vim-obsidian'
 Plugin 'dracula/vim'
+Plugin 'morhetz/gruvbox'
  
 " Personal plugins
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
@@ -78,7 +79,7 @@ filetype plugin indent on    " required
 
 let fortran_free_source=1
 syntax on               " Enable syntax highlighting
-colorscheme dracula
+colorscheme gruvbox
 
 " set synmaxcol=100       " Don't syntax higlight beyond 100th column
 let g:polyglot_disabled = ['latex']

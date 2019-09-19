@@ -59,13 +59,8 @@ There are some plugins that need to be built after they are installed. Here are 
 - [previm](https://github.com/previm/previm) Realtime preview by Vim.
 - [rainbow](https://github.com/luochen1990/rainbow) Rainbow Parentheses Improved, shorter code, no level limit, smooth and fast, powerful configuration.
 - [terminus](https://github.com/wincent/terminus) Enhanced terminal integration for Vim
-
-- [nerdtree](https://github.com/scrooloose/nerdtree) A tree explorer plugin for vim.
-- [vim-nerdtree-syntax-highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight) Extra syntax and highlight for nerdtree files
 - [vim-devicons](https://github.com/ryanoasis/vim-devicons) 🔣 Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more
-- [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin) A plugin of NERDTree showing git status
 - [TaDaa/vimade](https://github.com/TaDaa/vimade) An eye friendly plugin that fades your inactive buffers and preserves your syntax highlighting!
-- [sedm0784/vim-you-autocorrect](https://github.com/sedm0784/vim-you-autocorrect) Why should smartphones get all the fun?
 - [andrewradev/linediff.vim](https://github.com/andrewradev/linediff.vim) A vim plugin to perform diffs on blocks of code
 
 ## My personal plugins
@@ -80,3 +75,4 @@ There are some plugins that need to be built after they are installed. Here are 
  - [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) a colorscheme that looks nice.
  - [vim-obsidian](https://github.com/abra/vim-obsidian) Obsidian is a colorscheme for Vim
  - [dracula/vim](https://github.com/dracula/vim) 😱 A dark theme for Vim 
+ - [morhetz/gruvbox](https://github.com/morhetz/gruvbox) Retro groove color scheme for Vim
