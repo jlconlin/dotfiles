@@ -2,7 +2,6 @@ set nocompatible              " be iMproved, required
 
 source  ~/.vim/bundle/packages.vim
 
-let fortran_free_source=1
 syntax on               " Enable syntax highlighting
 colorscheme gruvbox
 

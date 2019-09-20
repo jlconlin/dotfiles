@@ -48,5 +48,5 @@ let g:tex_fold_enabled = 1  " Update tex folds when saving file
 let g:indentLine_enabled = 0
 
 " Commands to help with converting unit-ed numbers to use siunitx
-nmap <C-i> c2aW<C-R>=substitute(@", '\v(\S+)\s+(\S+)', '\\SI{\1}{\2}', '')<CR><ESC>2hvF{l
-vmap <C-i> c<C-R>=substitute(@", '\v(\S+)\s+(\S+)', '\\SI{\1}{\2}', '')<CR><ESC>hvF{l
+" nmap <C-i> c2aW<C-R>=substitute(@", '\v(\S+)\s+(\S+)', '\\SI{\1}{\2}', '')<CR><ESC>2hvF{l
+" vmap <C-i> c<C-R>=substitute(@", '\v(\S+)\s+(\S+)', '\\SI{\1}{\2}', '')<CR><ESC>hvF{l

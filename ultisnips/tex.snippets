@@ -1,0 +1,33 @@
+# snippet frame "frame environment" b
+# \begin{frame}{${1:frame title}}
+# 	${0:${VISUAL}}
+# \end{frame}
+# endsnippet
+
+snippet columns "beamer columns" b
+\begin{columns}[${1:c}]
+	\begin{column}{0.5\textwidth}
+		${0:${VISUAL}}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		${2:${VISUAL}}
+	\end{column}
+\end{columns}
+endsnippet
+
+snippet labday "lab note book labday" b
+\labday{`date "+%B %d, %Y, %A"`}
+
+endsnippet
+
+snippet experiment "lab notebook experiment" b
+\experiment{$1}
+
+endsnippet
+
+snippet subexperiment "lab notebook subexperiment" b
+\subexperiment{$1}
+
+endsnippet
+	
+	

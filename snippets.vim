@@ -1,10 +1,10 @@
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-f>"
-let g:UltiSnipsJumpBackwardTrigger="<c-r>"
-let g:UltiSnipsListSnippets="<leader>s"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+" let g:UltiSnipsListSnippets="<c-x>"
 
-let g:UltiSnipsSnippetsDir="~/.vim/snippets"
+let g:UltiSnipsSnippetsDir="~/.vim/ultisnips"
 let g:UltiSnipsEditSplit="vertical"
 
 "Open UltiSnips edit function
-nmap <leader>ue :UltiSnipsEdit<cr>
+nmap <leader>se :UltiSnipsEdit<cr>
