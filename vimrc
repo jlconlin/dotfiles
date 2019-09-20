@@ -1,84 +1,6 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
 
-" Navigate vim splits like a sane person
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
-" Commands to make moving through command line like in the terminal
-:cnoremap <M-B> <s-left>
-:cnoremap <M-F> <s-right>
-:cnoremap <C-A> <home>
-:cnoremap <C-E> <end>
-
-let mapleader="\\"
-map <C-D> <Plug>IMAP_JumpForward
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'jeetsukumaran/vim-buffergator'
-Plugin 'JLimperg/Align'
-Plugin 'vim-scripts/VisIncr'
-Plugin 'ervandew/supertab.git'
-Plugin 'tpope/vim-commentary'
-Plugin 'Konfekt/FastFold'
-Plugin 'wincent/command-t'
-Plugin 'vim-voom/VOoM'
-Plugin 'previm/previm'
-Plugin 'luochen1990/rainbow'
-Plugin 'wincent/terminus'
-Plugin 'sedm0784/vim-you-autocorrect'
-Plugin 'AndrewRadev/linediff.vim'
-Plugin 'SirVer/ultisnips'
-Plugin 'jlconlin/vim-snippets'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-
-" NERDTree related stuff
-" Plugin 'scrooloose/nerdtree'
-" Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-" Plugin 'ryanoasis/vim-devicons'
-" Plugin 'Xuyuanp/nerdtree-git-plugin'
-
-" Language-specific plugins
-" Plugin 'vim-latex/vim-latex'
-Plugin 'lervag/vimtex'
-Plugin 'vim-scripts/XML-Folding'
-Plugin 'elzr/vim-json'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'python-mode/python-mode'
-
-" Tags
-" Plugin 'majutsushi/tagbar'
-" Plugin 'xolox/vim-easytags'
-" Plugin 'xolox/vim-misc'
-
-" Colorscheme plugins
-Plugin 'trevordmiller/nova-vim'
-Plugin 'fenetikm/falcon'
-Plugin 'christophermca/meta5'
-Plugin 'sickill/vim-monokai'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'abra/vim-obsidian'
-Plugin 'dracula/vim'
-Plugin 'morhetz/gruvbox'
- 
-" Personal plugins
-Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
-Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+source  ~/.vim/bundle/packages.vim
 
 let fortran_free_source=1
 syntax on               " Enable syntax highlighting
@@ -123,17 +45,24 @@ set sbo+=hor
 set sessionoptions=blank,curdir,folds,help,options,resize,tabpages,winsize
 set printoptions=paper:letter,number:y,duplex:off,left:5pc
 
-" Settings unique to Mac
-if has("macunix")
-  set macmeta             " use Mac's option key as meta
-endif
+" Navigate vim splits like a sane person
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
+" Commands to make moving through command line like in the terminal
+:cnoremap <M-B> <s-left>
+:cnoremap <M-F> <s-right>
+:cnoremap <C-A> <home>
+:cnoremap <C-E> <end>
+
+let mapleader="\\"
 
 " Fold based on a regular expression After searching, fold those things not
 " found, by issuing the command '\z' (without quotes, of course)
 nnoremap \z :setlocal foldexpr=(getline(v:lnum)=~@/)?0:(getline(v:lnum-1)=~@/)\\|\\|(getline(v:lnum+1)=~@/)?1:2 foldmethod=expr foldlevel=0 foldcolumn=2<CR>
 nnoremap \Z :set foldexpr=(getline(v:lnum)=~@/)?0:(getline(v:lnum-1)=~@/)\\|\\|(getline(v:lnum+1)=~@/)?1:2 foldmethod=expr foldlevel=0 foldcolumn=2<CR>
-
-command Vterm :vert term
 
 " If doing a diff. Upon writing changes to file, automatically update the
 " differences
@@ -144,11 +73,13 @@ autocmd FileType c,cpp,h,hpp,cs,java setlocal commentstring=//\ %s
 
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
+let g:vimtex_fold_enabled = 1
 let g:tex_flavor='latex'
 
 let g:vimade = {}
 let g:vimade.fadelevel = 0.7
 
+source ~/.vim/vimdirs.vim
 source ~/.vim/snippets.vim
 source ~/.vim/tags.vim
-source ~/.vim/vimdirs.vim
+source ~/.vim/mac.vim         " Settings unique to Mac
