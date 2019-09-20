@@ -35,9 +35,12 @@ Plugin 'vim-voom/VOoM'
 Plugin 'previm/previm'
 Plugin 'luochen1990/rainbow'
 Plugin 'wincent/terminus'
-" Plugin 'TaDaa/vimade'
 Plugin 'sedm0784/vim-you-autocorrect'
 Plugin 'AndrewRadev/linediff.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'jlconlin/vim-snippets'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 
 " NERDTree related stuff
 " Plugin 'scrooloose/nerdtree'
@@ -46,7 +49,7 @@ Plugin 'AndrewRadev/linediff.vim'
 " Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " Language-specific plugins
-Plugin 'vim-latex/vim-latex'
+" Plugin 'vim-latex/vim-latex'
 Plugin 'lervag/vimtex'
 Plugin 'vim-scripts/XML-Folding'
 Plugin 'elzr/vim-json'
@@ -143,21 +146,9 @@ let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 let g:tex_flavor='latex'
 
-" Turn off NETRW plugin
-" let loaded_netrwPlugin = 1
-
-" Toggle NERDTree
-" map <C-n> :NERDTreeToggle<CR>
-" autocmd StdinReadPre * let s:std_in=1
-" Open NERDTree if no files are given
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" Open NERDTree if directory is given
-" autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-" Close ViM if only NERDTree is open
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
 let g:vimade = {}
 let g:vimade.fadelevel = 0.7
 
+source ~/.vim/snippets.vim
 source ~/.vim/tags.vim
 source ~/.vim/vimdirs.vim
