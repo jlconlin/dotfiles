@@ -25,6 +25,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'jlconlin/vim-snippets'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-airline/vim-airline'
 
 " Language-specific plugins
 Plugin 'lervag/vimtex'
