@@ -1,6 +1,6 @@
 set nocompatible              " be iMproved, required
 
-source  ~/.vim/bundle/packages.vim
+source  ~/.vim/packages.vim
 
 syntax on               " Enable syntax highlighting
 colorscheme gruvbox
