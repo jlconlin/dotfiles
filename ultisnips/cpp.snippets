@@ -1,0 +1,16 @@
+snippet namespace "namespace" b
+namespace $1{
+	$0
+}
+endsnippet
+
+snippet catch "Catch MACRO" b
+${1:SCENARIO}( "$2" ){
+	${0:${VISUAL}}
+}
+endsnippet
+
+
+snippet log "Log message" b
+Log::${1:info}( "$2"$3 );
+endsnippet

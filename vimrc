@@ -70,6 +70,8 @@ autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 " Set a better commentstring for some filetypes
 autocmd FileType c,cpp,h,hpp,cs,java setlocal commentstring=//\ %s
 
+let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 let g:vimtex_fold_enabled = 1
