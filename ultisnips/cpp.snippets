@@ -1,16 +1,31 @@
 snippet namespace "namespace" b
 namespace $1{
-	$0
-}
+$0
+} // namespace $1
 endsnippet
 
 snippet catch "Catch MACRO" b
 ${1:SCENARIO}( "$2" ){
 	${0:${VISUAL}}
-}
+} // $1
 endsnippet
 
 
 snippet log "Log message" b
 Log::${1:info}( "$2"$3 );
+$0
+endsnippet
+
+snippet try "try/catch block" b
+try {
+	${0:${VISUAL}}
+} catch( ${1:std::exception&} ){
+	${2}
+}
+endsnippet
+
+snippet bc "block comment" b
+/*
+${VISUAL}
+ */
 endsnippet

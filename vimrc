@@ -5,7 +5,7 @@ source  ~/.vim/packages.vim
 syntax on               " Enable syntax highlighting
 
 colorscheme gruvbox
-set background-=light
+set background=light
 let g:gruvbox_contrast_light="light"
 
 " set synmaxcol=100       " Don't syntax higlight beyond 100th column
