@@ -1,12 +1,13 @@
 snippet columns "beamer columns" b
 \begin{columns}[${1:c}]
-	\begin{column}{0.5\textwidth}
-		${0:${VISUAL}}
+	\begin{column}{${2:0.5}\textwidth}
+		${3:${VISUAL}}
 	\end{column}
-	\begin{column}{0.5\textwidth}
-		${2:${VISUAL}}
+	\begin{column}{${3:0.5}\textwidth}
+		$4
 	\end{column}
 \end{columns}
+$0
 endsnippet
 
 snippet labday "lab note book labday" b
@@ -26,4 +27,11 @@ endsnippet
 
 snippet includegraphics "includegraphics" b
 \includegraphics[${1:width=\textwidth,keepaspectratio}]{$0${VISUAL}}
+endsnippet
+
+snippet frame "Beamer frame environment" b
+\begin{frame}${1:[fragile]}{${2:title}}
+	${3:${VISUAL}}
+\end{frame}
+$0
 endsnippet
