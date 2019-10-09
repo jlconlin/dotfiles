@@ -74,6 +74,7 @@ autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 autocmd FileType c,cpp,h,hpp,cs,java setlocal commentstring=//\ %s
 
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+let g:netrw_list_hide='.*\.aux,.*\.bbl,.*\.bcf,.*\.blg,.*\.fls,.*\.idx,.*\.ilg,.*\.ind,.*\.fdb_latexmk,.*\.run\.xml,_minted-.*\/'
 
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
