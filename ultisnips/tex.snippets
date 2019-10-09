@@ -11,7 +11,7 @@ $0
 endsnippet
 
 snippet labday "lab note book labday" b
-\labday{`date "+%B %d, %Y, %A"`}
+\labday{`date "+%B %d, %Y, %A"`}\label{day:`date "+%m%d%Y"`}
 
 endsnippet
 
@@ -35,3 +35,12 @@ snippet frame "Beamer frame environment" b
 \end{frame}
 $0
 endsnippet
+
+snippet minti "\mintinline"
+\mintinline${1:[options]}{${2:language}}|${3:${VISUAL}}|$0
+endsnippet
+
+snippet person "Person macro" 
+\person{$1}{$2}$0
+endsnippet
+	

@@ -1,11 +1,15 @@
-snippet () "Parentheses surround"
-$0(${VISUAL})
+snippet () "Parentheses surround" A
+$1(${2:${VISUAL}})$0
 endsnippet
 
-snippet [] "Bracket surround"
-$0[${VISUAL}]
+snippet [] "Bracket surround" A
+$1[${2:${VISUAL}}]$0
 endsnippet
 
-snippet {} "Brace surround"
-$0{${VISUAL}}
+snippet {} "Brace surround" A
+$1{${2:${VISUAL}}}$0
+endsnippet
+
+snippet <> "Angle surround" A
+$1<${2:${VISUAL}}>$0
 endsnippet

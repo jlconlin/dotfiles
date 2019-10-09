@@ -9,10 +9,12 @@ ${1:SCENARIO}( "$2" ){
 	${0:${VISUAL}}
 } // $1
 endsnippet
+snippet check "catch CHECK" b
+CHECK$1( ${2:${VISUAL}} );$0
+endsnippet
 
 snippet log "Log message" b
-Log::${1:info}( "$2"$3 );
-$0
+Log::${1:info}( "$2"$3 );$0
 endsnippet
 
 snippet try "try/catch block" b
@@ -39,4 +41,8 @@ endsnippet
 
 snippet {} "Brace surround"
 $0{ ${VISUAL} }
+endsnippet
+
+snippet approx "Catch Approx" 
+Approx( ${1:${VISUAL}} )$0
 endsnippet
