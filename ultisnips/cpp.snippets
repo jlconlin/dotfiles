@@ -9,6 +9,7 @@ ${1:SCENARIO}( "$2" ){
 	${0:${VISUAL}}
 } // $1
 endsnippet
+
 snippet check "catch CHECK" b
 CHECK$1( ${2:${VISUAL}} );$0
 endsnippet
@@ -27,9 +28,16 @@ endsnippet
 
 snippet bc "block comment" b
 /*
-${VISUAL}
- */
+${1:${VISUAL}}
+ */$0
 endsnippet
+
 snippet approx "Catch Approx" 
 Approx( ${1:${VISUAL}} )$0
+endsnippet
+
+snippet if "if" b
+if( $1 ){
+	${2:${VISUAL}}
+}$0
 endsnippet
