@@ -44,3 +44,34 @@ snippet person "Person macro"
 \person{$1}{$2}$0
 endsnippet
 	
+snippet subfigure "subfigure environment" b
+\begin{subfigure}${1:[b]}{${2:0.4\textwidth}}
+	${0:${VISUAL}}
+\end{subfigure}
+endsnippet
+
+snippet minted "minted environment" b
+\begin{minted}[${1:frame=single}]{${2:language}}
+${0:${VISUAL}}
+\end{minted}
+endsnippet
+
+snippet only "beamer only command" b
+\only<${1:1}>{${2:${VISUAL}}}$0
+endsnippet
+
+snippet uncover "beamer uncover command" b
+\unvover<${1:1}>{${2:${VISUAL}}}$0
+endsnippet
+
+snippet surround "surround with some stuff" i
+$1${VISUAL}$0
+endsnippet
+
+snippet up "usepackage" b
+\usepackage${1:[options]}{${2:${VISUAL:package}}}$0
+endsnippet
+
+snippet mode "beamer mode environment" 
+\mode${1:<article>}{${2:${VISUAL:text}}}$0
+endsnippet 

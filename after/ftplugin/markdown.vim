@@ -14,8 +14,6 @@ function OpenInMarked2()
 endfunction
 
 command! Marked execute "!open % -a Marked\\ 2"
-
-EnableAutocorrect
 nmap <silent> <leader>m :call OpenInMarked2() <CR> <CR>
 
 " set conceallevel=0
