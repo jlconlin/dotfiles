@@ -6,7 +6,8 @@ syntax on               " Enable syntax highlighting
 
 colorscheme gruvbox
 set background=light
-let g:gruvbox_contrast_light="light"
+let g:gruvbox_contrast_light="hard"
+highlight CursorLine ctermbg=grey
 
 " set synmaxcol=100       " Don't syntax higlight beyond 100th column
 let g:polyglot_disabled = ['latex']
@@ -43,6 +44,7 @@ set wildmode=full       " Complete the next full match
 set vb                  " Use visual bell instead of beeping
 set sbo-=ver            " Default to horizontal scrollbinding instead of vertical
 set sbo+=hor
+set cursorline          " Highlight current line
 
 set sessionoptions=blank,curdir,folds,help,options,resize,tabpages,winsize
 set printoptions=paper:letter,number:y,duplex:off,left:5pc
@@ -80,9 +82,6 @@ let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 let g:vimtex_fold_enabled = 1
 let g:tex_flavor='latex'
-
-let g:vimade = {}
-let g:vimade.fadelevel = 0.7
 
 source ~/.vim/vimdirs.vim
 source ~/.vim/snippets.vim
