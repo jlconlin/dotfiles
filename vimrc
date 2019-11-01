@@ -7,7 +7,6 @@ syntax on               " Enable syntax highlighting
 colorscheme gruvbox
 set background=light
 let g:gruvbox_contrast_light="hard"
-highlight CursorLine ctermbg=grey
 
 " set synmaxcol=100       " Don't syntax higlight beyond 100th column
 let g:polyglot_disabled = ['latex']
@@ -45,6 +44,9 @@ set vb                  " Use visual bell instead of beeping
 set sbo-=ver            " Default to horizontal scrollbinding instead of vertical
 set sbo+=hor
 set cursorline          " Highlight current line
+set termguicolors
+
+highlight CursorLine ctermbg=Grey
 
 set sessionoptions=blank,curdir,folds,help,options,resize,tabpages,winsize
 set printoptions=paper:letter,number:y,duplex:off,left:5pc
@@ -87,3 +89,4 @@ source ~/.vim/vimdirs.vim
 source ~/.vim/snippets.vim
 source ~/.vim/tags.vim
 source ~/.vim/mac.vim         " Settings unique to Mac
+source ~/.vim/powerline.vim
