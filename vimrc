@@ -6,6 +6,12 @@ filetype plugin indent on
 
 syntax on               " Enable syntax highlighting
 
+if has('termguicolors')
+  set termguicolors
+endif
+
+
+
 " set synmaxcol=100       " Don't syntax higlight beyond 100th column
 let g:polyglot_disabled = ['latex']
 
@@ -43,7 +49,6 @@ set sbo-=ver            " Default to horizontal scrollbinding instead of vertica
 set sbo+=hor
 set cursorline          " Highlight current line
 
-set termguicolors
 colorscheme gruvbox
 set background=light
 let g:gruvbox_contrast_light="hard"

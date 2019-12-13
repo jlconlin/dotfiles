@@ -51,6 +51,9 @@ Plugin 'abra/vim-obsidian'
 Plugin 'dracula/vim'
 Plugin 'morhetz/gruvbox'
  
+" Games
+Plugin 'vim/killersheep'
+ 
 " Personal plugins
 Plugin 'jlconlin/ENDF.vim'      " Configuration for ENDF files
 Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
