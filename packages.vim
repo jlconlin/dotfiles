@@ -33,7 +33,7 @@ Plugin 'vim-scripts/XML-Folding'
 Plugin 'elzr/vim-json'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'python-mode/python-mode'
+" Plugin 'python-mode/python-mode'
 
 " Tags
 " Plugin 'majutsushi/tagbar'

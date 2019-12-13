@@ -6,11 +6,13 @@ filetype plugin indent on
 
 syntax on               " Enable syntax highlighting
 
+colorscheme gruvbox
+set background=light
+let g:gruvbox_contrast_light="hard"
+
 if has('termguicolors')
   set termguicolors
 endif
-
-
 
 " set synmaxcol=100       " Don't syntax higlight beyond 100th column
 let g:polyglot_disabled = ['latex']
@@ -48,10 +50,6 @@ set vb                  " Use visual bell instead of beeping
 set sbo-=ver            " Default to horizontal scrollbinding instead of vertical
 set sbo+=hor
 set cursorline          " Highlight current line
-
-colorscheme gruvbox
-set background=light
-let g:gruvbox_contrast_light="hard"
 
 set sessionoptions=blank,curdir,folds,help,options,resize,tabpages,winsize
 set printoptions=paper:letter,number:y,duplex:off,left:5pc
