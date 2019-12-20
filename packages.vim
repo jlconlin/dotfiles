@@ -59,4 +59,3 @@ Plugin 'jlconlin/cpp.vim'       " Configuration for C++ files
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-

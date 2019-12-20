@@ -1,4 +1,4 @@
-let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsUsePythonVersion = 3
 
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
@@ -11,3 +11,5 @@ let g:UltiSnipsEditSplit = "vertical"
 
 "Open UltiSnips edit function
 nmap <leader>se :UltiSnipsEdit<cr>
+
+let g:UltiSnipsNoPythonWarning = 1
