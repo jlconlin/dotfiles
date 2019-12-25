@@ -89,7 +89,7 @@ let g:vimtex_fold_enabled = 1
 let g:tex_flavor='latex'
 
 source ~/.vim/vimdirs.vim
-" source ~/.vim/snippets.vim
+source ~/.vim/snippets.vim
 source ~/.vim/tags.vim
 source ~/.vim/mac.vim         " Settings unique to Mac
 " source ~/.vim/powerline.vim
