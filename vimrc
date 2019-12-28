@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 
-source  ~/.vim/packages.vim
+source ~/.vim/python3.vim
+source ~/.vim/packages.vim
 
 filetype plugin indent on
 
