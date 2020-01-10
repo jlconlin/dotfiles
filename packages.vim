@@ -23,9 +23,12 @@ Plugin 'wincent/terminus'
 Plugin 'AndrewRadev/linediff.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'jlconlin/vim-snippets'
-Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 " Plugin 'vim-airline/vim-airline'
+
+" Fugitive Related plugins
+Plugin 'tpope/vim-fugitive'
+Plugin 'int3/vim-extradite'
 
 " Language-specific plugins
 Plugin 'lervag/vimtex'

@@ -51,6 +51,7 @@ set vb                  " Use visual bell instead of beeping
 set sbo-=ver            " Default to horizontal scrollbinding instead of vertical
 set sbo+=hor
 set cursorline          " Highlight current line
+set splitright          " New split window will be on right of current window
 
 set sessionoptions=blank,curdir,folds,help,options,resize,tabpages,winsize
 set printoptions=paper:letter,number:y,duplex:off,left:5pc
@@ -68,6 +69,8 @@ nnoremap <c-l> <c-w>l
 :cnoremap <C-E> <end>
 
 let mapleader="\\"
+
+:cabbrev Help vert h
 
 " Fold based on a regular expression After searching, fold those things not
 " found, by issuing the command '\z' (without quotes, of course)
