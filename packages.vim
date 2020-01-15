@@ -28,7 +28,7 @@ Plugin 'airblade/vim-gitgutter'
 
 " Fugitive Related plugins
 Plugin 'tpope/vim-fugitive'
-Plugin 'int3/vim-extradite'
+" Plugin 'int3/vim-extradite'
 
 " Language-specific plugins
 Plugin 'lervag/vimtex'
@@ -37,6 +37,7 @@ Plugin 'elzr/vim-json'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'sheerun/vim-polyglot'
 " Plugin 'python-mode/python-mode'
+Plugin 'fortran.vim'
 
 " Tags
 " Plugin 'majutsushi/tagbar'

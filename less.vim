@@ -15,6 +15,9 @@ set readonly
 " Turn syntax on
 syntax enable
 
+" Don't fold anything
+set nofoldenable
+
 " No menu bar and tool bar
 set guioptions=aiMr
 
