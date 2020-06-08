@@ -10,6 +10,7 @@ syntax on               " Enable syntax highlighting
 colorscheme gruvbox
 set background=light
 let g:gruvbox_contrast_light="hard"
+highlight Comment cterm=italic
 
 if has('termguicolors')
   set termguicolors
