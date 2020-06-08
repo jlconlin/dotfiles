@@ -24,7 +24,7 @@ Plugin 'AndrewRadev/linediff.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'jlconlin/vim-snippets'
 Plugin 'airblade/vim-gitgutter'
-" Plugin 'vim-airline/vim-airline'
+Plugin 'godlygeek/tabular'
 
 " Fugitive Related plugins
 Plugin 'tpope/vim-fugitive'
