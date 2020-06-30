@@ -42,10 +42,28 @@ if( $1 ){
 }$0
 endsnippet
 
-snippet get "get" i
+snippet get "std::get" i
 std::get< ${1:0} >( ${2:${VISUAL}} )$0
 endsnippet
 
-snippet move "move" i
+snippet move "stdmove" i
 std::move( ${1:${VISUAL}} )$0
+endsnippet
+
+snippet forward "stdforward" i
+std::forward< ${1} >( ${2:${VISUAL}} )$0
+endsnippet
+
+snippet max "std::max" i
+std::max( ${1}, ${2} )$0
+endsnippet
+	
+snippet abs "std::abs" i
+std::abs( ${1:${VISUAL}} )$0
+endsnippet
+	
+snippet for "for loop" b
+for( $1 ){
+	${2:${VISUAL}}
+}$0
 endsnippet
