@@ -73,6 +73,9 @@ let mapleader="\\"
 
 :cabbrev Help vert h
 
+" Toggle undo graph
+nnoremap <F5> :MundoToggle<CR>
+
 " Fold based on a regular expression After searching, fold those things not
 " found, by issuing the command '\z' (without quotes, of course)
 nnoremap \z :setlocal foldexpr=(getline(v:lnum)=~@/)?0:(getline(v:lnum-1)=~@/)\\|\\|(getline(v:lnum+1)=~@/)?1:2 foldmethod=expr foldlevel=0 foldcolumn=2<CR>

@@ -26,7 +26,8 @@ Plugin 'jlconlin/vim-snippets'
 " Plugin 'airblade/vim-gitgutter'
 Plugin 'godlygeek/tabular'
 " Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
+Plugin 'simnalamburt/vim-mundo'
 
 " Fugitive Related plugins
 Plugin 'tpope/vim-fugitive'
