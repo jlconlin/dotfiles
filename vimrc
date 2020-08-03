@@ -7,10 +7,10 @@ filetype plugin indent on
 
 syntax on               " Enable syntax highlighting
 
+let g:gruvbox_contrast_light="hard"
 colorscheme gruvbox
 set background=light
-let g:gruvbox_contrast_light="hard"
-highlight Comment cterm=italic
+let g:gruvbox_italicize_comments=1
 
 if has('termguicolors')
   set termguicolors
