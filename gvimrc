@@ -5,8 +5,10 @@ set cursorline          " Highlight current line
 set bg=light
 
 " Settings unique to Mac
-if has("macunix")
-  set guifont=Menlo\ Regular:120    " Set font to Menlo 12 pt size.  
+if has( "gui_running" )
+  if has("gui_macvim")
+    set guifont=Hack\ Nerd\ Font:h12
+  endif
 endif
 
 set t_vb=       " Use visual bell instead of beeping
