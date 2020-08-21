@@ -43,9 +43,9 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'fortran.vim'
 
 " Tags
-" Plugin 'majutsushi/tagbar'
-" Plugin 'xolox/vim-easytags'
-" Plugin 'xolox/vim-misc'
+Plugin 'majutsushi/tagbar'
+Plugin 'Draiken/vim-easytags'
+Plugin 'xolox/vim-misc'
 
 " Colorscheme plugins
 " Plugin 'trevordmiller/nova-vim'

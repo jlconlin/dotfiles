@@ -88,6 +88,8 @@ autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 " Set a better commentstring for some filetypes
 autocmd FileType c,cpp,h,hpp,cs,java setlocal commentstring=//\ %s
 
+autocmd Filetype ENDF setlocal nofoldenable
+
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 let g:netrw_list_hide='.*\.aux,.*\.bbl,.*\.bcf,.*\.blg,.*\.fls,.*\.idx,.*\.ilg,.*\.ind,.*\.fdb_latexmk,.*\.run\.xml,_minted-.*\/'
 
