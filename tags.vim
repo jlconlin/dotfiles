@@ -12,8 +12,14 @@ map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 " Toggle tagbar
 nmap <C-m> :TagbarToggle<CR>
 
+" Move to Tagbar window when it is opened
+let g:tagbar_autofocus = 1
+
 " Update the ctags whenever a file is saved
 let g:easytags_events = ['BufWritePost']
+
+" Use global line number configuration in Tagbar
+let g:tagbar_show_linenumbers = -1
 
 " Update easy tags asynchronously
 " This doesn't freeze the window while the tags are updated

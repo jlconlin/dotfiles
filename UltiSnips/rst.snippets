@@ -1,0 +1,15 @@
+snippet post "post" b
+.. _day_`date "+%Y-%m-%d"`:
+`date "+%B %d, %Y, %A"`
+=======================
+
+.. post:: `date "+%B %d, %Y, %A"`
+	:tags: ${1}
+	:category: ${2}
+
+${0}
+endsnippet
+
+snippet newpost "new post in index" b
+`date "+%Y-%m-%d"`.rst
+endsnippet

@@ -11,7 +11,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'JLimperg/Align'
 Plugin 'vim-scripts/VisIncr'
-Plugin 'ervandew/supertab.git'
+" Plugin 'ervandew/supertab.git'
 Plugin 'tpope/vim-commentary'
 Plugin 'Konfekt/FastFold'
 Plugin 'wincent/command-t'
@@ -46,6 +46,10 @@ Plugin 'fortran.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'Draiken/vim-easytags'
 Plugin 'xolox/vim-misc'
+
+" Plugin
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
 
 " Colorscheme plugins
 " Plugin 'trevordmiller/nova-vim'

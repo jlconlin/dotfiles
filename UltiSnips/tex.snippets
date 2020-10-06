@@ -1,17 +1,17 @@
 snippet columns "beamer columns" b
 \begin{columns}[${1:c}]
 	\begin{column}{${2:0.5}\textwidth}
-		${3:${VISUAL}}
+		${4:${VISUAL}}
 	\end{column}
 	\begin{column}{${3:0.5}\textwidth}
-		$4
+		$5
 	\end{column}
 \end{columns}
 $0
 endsnippet
 
 snippet labday "lab note book labday" b
-\labday{`date "+%B %d, %Y, %A"`}\label{day:`date "+%m%d%Y"`}
+\labday{`date "+%B %d, %Y, %A"`}\label{day:`date "+%Y-%m-%d"`}
 
 endsnippet
 
@@ -104,3 +104,20 @@ endsnippet
 snippet <> "Angle surround" Ai
 <${1:${VISUAL}}>$0
 endsnippet
+
+snippet ibv "ibibleverse" w
+\ibibleverse{${1}}(${2})$0
+endsnippet
+
+snippet bq "blockquote" w
+\blockquote[${1:reference}]{${2:${VISUAL}}}$0
+endsnippet
+	
+snippet fn "footnote" w
+\footnote{${1:${VISUAL}}}$0
+endsnippet
+
+snippet NJOY "NJOY command" 
+\NJOY{${1:21}}$0
+endsnippet
+	
