@@ -1,5 +1,11 @@
+snippet math "Sphinx math directive" w
+:math:\`${1:${VISUAL}}\`${0}
+endsnippet
+	
+	
 snippet post "post" b
 .. _day_`date "+%Y-%m-%d"`:
+
 `date "+%B %d, %Y, %A"`
 =======================
 
@@ -10,6 +16,26 @@ snippet post "post" b
 ${0}
 endsnippet
 
+snippet article "pelican article" b
+.. _day_`date "+%Y-%m-%d"`:
+
+`date "+%B %d, %Y, %A"`
+=======================
+
+:title: `date "+%B %d, %Y, %A"`
+:date: `date "+%Y-%m-%d %H:%M"`
+:authors: Jeremy Lloyd Conlin
+:tags: ${1}
+:category: 
+
+${0}
+endsnippet
+
 snippet newpost "new post in index" b
 `date "+%Y-%m-%d"`.rst
 endsnippet
+
+snippet component "NJOY component in Lab Notebook" w
+:component:\`${1:${VISUAL}}\`${0}
+endsnippet
+	

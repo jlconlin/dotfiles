@@ -6,7 +6,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 let g:UltiSnipsListSnippets = "<c-h>"
                 
-let g:UltiSnipsSnippetsDir = "~/.vim/ultisnips"
+let g:UltiSnipsSnippetsDirectories=[ "UltiSnips", "~/.vim/ultisnips"]
 let g:UltiSnipsEditSplit = "vertical"
 
 "Open UltiSnips edit function

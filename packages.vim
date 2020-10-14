@@ -22,8 +22,7 @@ Plugin 'wincent/terminus'
 " Plugin 'sedm0784/vim-you-autocorrect'
 Plugin 'AndrewRadev/linediff.vim'
 Plugin 'SirVer/ultisnips'
-Plugin 'jlconlin/vim-snippets'
-" Plugin 'airblade/vim-gitgutter'
+Plugin 'honza/vim-snippets'
 Plugin 'godlygeek/tabular'
 " Plugin 'airblade/vim-gitgutter'
 " Plugin 'scrooloose/syntastic'
@@ -41,6 +40,7 @@ Plugin 'tpope/vim-markdown'
 Plugin 'sheerun/vim-polyglot'
 " Plugin 'python-mode/python-mode'
 Plugin 'fortran.vim'
+" Plugin 'Rykka/riv.vim'
 
 " Tags
 Plugin 'majutsushi/tagbar'
@@ -48,8 +48,8 @@ Plugin 'Draiken/vim-easytags'
 Plugin 'xolox/vim-misc'
 
 " Plugin
-Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
+" Plugin 'vim-pandoc/vim-pandoc'
+" Plugin 'vim-pandoc/vim-pandoc-syntax'
 
 " Colorscheme plugins
 " Plugin 'trevordmiller/nova-vim'

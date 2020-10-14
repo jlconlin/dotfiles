@@ -1,7 +1,11 @@
-snippet ** "strong" i
-**${1:${VISUAL}}**$0
+snippet post "Jekyll blog post" b
+---
+title: ${1: `date "+%B %d, %Y, %A"`}
+date: `date "+%Y-%m-%d"`
+layout: post
+tags: ${2}
+---
+${0}
 endsnippet
+	
 
-snippet * "emphasize" i
-*${1:${VISUAL}}*$0
-endsnippet

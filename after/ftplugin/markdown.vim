@@ -16,4 +16,8 @@ endfunction
 command! Marked execute "!open % -a Marked\\ 2"
 nmap <silent> <leader>m :call OpenInMarked2() <CR> <CR>
 
-" set conceallevel=0
+let g:vim_markdown_math = 1
+let g:vim_markdown_frontmatter=1  " Highlight YAML front matter of blog posts
+let g:vim_markdown_new_list_item_indent = 2
+
+:UltiSnipsAddFiletypes markdown.pandoc
