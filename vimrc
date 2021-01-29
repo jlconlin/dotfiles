@@ -1,5 +1,8 @@
 set nocompatible              " be iMproved, required
 
+" set synmaxcol=100       " Don't syntax higlight beyond 100th column
+let g:polyglot_disabled = ['latex']
+
 source ~/.vim/python3.vim
 source ~/.vim/packages.vim
 
@@ -9,15 +12,12 @@ syntax on               " Enable syntax highlighting
 
 let g:gruvbox_contrast_light="hard"
 colorscheme gruvbox
-set background=light
+set background=dark
 let g:gruvbox_italicize_comments=1
 
 if has('termguicolors')
   set termguicolors
 endif
-
-" set synmaxcol=100       " Don't syntax higlight beyond 100th column
-let g:polyglot_disabled = ['latex']
 
 set encoding=UTF-8      " Set the default file encoding to UTF-8
 set autoread            " Automatically read a file that has been changed

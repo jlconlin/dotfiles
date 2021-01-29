@@ -26,7 +26,7 @@ snippet subexp "lab notebook subexperiment" b
 
 endsnippet
 
-snippet includegraphics "includegraphics" b
+snippet ig "includegraphics" b
 \includegraphics[${1:width=\textwidth,keepaspectratio}]{$0${VISUAL}}
 endsnippet
 
@@ -58,7 +58,9 @@ ${0:${VISUAL}}
 endsnippet
 
 snippet only "beamer only command" b
-\only<${1:1}>{${2:${VISUAL}}}$0
+\only<${1:1}>{
+  ${2:${VISUAL}}
+}$0
 endsnippet
 
 snippet uncover "beamer uncover command" b
@@ -119,5 +121,13 @@ endsnippet
 
 snippet NJOY "NJOY command" 
 \NJOY{${1:21}}$0
+endsnippet
+	
+snippet " "quotes" 
+\`\`${1:${VISUAL}}''${2}
+endsnippet
+	
+snippet note "Beamer note"
+\note{${1:${VISUAL}}}$0
 endsnippet
 	

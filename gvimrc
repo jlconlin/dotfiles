@@ -1,7 +1,7 @@
 set guioptions+=b   " Add bottom scrollbar
 set columns=200
 set lines=75
-set bg=light
+" set bg=light
 
 " Settings unique to Mac
 if has( "gui_running" )

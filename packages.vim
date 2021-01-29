@@ -27,6 +27,8 @@ Plugin 'godlygeek/tabular'
 " Plugin 'airblade/vim-gitgutter'
 " Plugin 'scrooloose/syntastic'
 Plugin 'simnalamburt/vim-mundo'
+Plugin 'chrisbra/unicode.vim'
+Plugin 'flwyd/vim-conjoin'
 
 " Fugitive Related plugins
 Plugin 'tpope/vim-fugitive'
@@ -38,9 +40,11 @@ Plugin 'vim-scripts/XML-Folding'
 Plugin 'elzr/vim-json'
 Plugin 'tpope/vim-markdown'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'tmhedberg/simpylfold'
 " Plugin 'python-mode/python-mode'
 Plugin 'fortran.vim'
 " Plugin 'Rykka/riv.vim'
+Plugin 'ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/mcnp.vim.git'
 
 " Tags
 Plugin 'majutsushi/tagbar'

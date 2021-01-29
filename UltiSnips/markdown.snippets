@@ -1,7 +1,7 @@
 snippet post "Jekyll blog post" b
 ---
 title: ${1: `date "+%B %d, %Y, %A"`}
-date: `date "+%Y-%m-%d"`
+date: `date "+%Y-%m-%d %H:%M"`
 tags: 
   - ${2}
 people:
@@ -10,6 +10,6 @@ people:
 ${0}
 endsnippet
 	
-snippet cite "citation command for jekyll-scholar" b
+snippet cite "citation command for jekyll-scholar"
 {% cite ${1:${VISUAL}} %}
 endsnippet

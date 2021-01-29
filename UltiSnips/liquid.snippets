@@ -1,6 +1,6 @@
 # Generic Tags
-snippet %
-{% ${1} %}${2}
+snippet % "liquid" 
+{% ${1:${VISUAL}} %}${0}
 endsnippet
 
 snippet %%
@@ -60,8 +60,15 @@ endsnippet
 # Jekyll-specific snippets
 snippet hl
 {% highlight ${1} %}
-	${VISUAL}${2}
+	${2:${VISUAL}}
 {% endhighlight %}
 endsnippet
 
+snippet figure "jekyll-figure"
+{% figure caption:${1:"Caption (markdown)"} %}
+${2:${VISUAL}}
+{% endfigure %}
+${0}
+endsnippet
+	
 # vim:ft=snippets:
