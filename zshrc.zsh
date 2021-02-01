@@ -5,8 +5,11 @@ export ZSHRC=$HOME/.zsh
 
 source $ZSHRC/zsh/sourceFile.zsh
 
+sourceFile $HOME/.zsh/ohmy.zsh
+
 # Provide opportunity to make local changes
 sourceFile $HOME/.zshrc.local
+
 
 ## HISTORY, configure
 export HISTFILESIZE=10000

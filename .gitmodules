@@ -1,0 +1,6 @@
+[submodule "bashrc.lanl"]
+	path = bashrc.lanl
+	url = ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/bashrc.lanl.git
+[submodule "ohmyzsh"]
+	path = ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
