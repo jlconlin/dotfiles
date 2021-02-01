@@ -5,6 +5,7 @@ export ZSHRC=$HOME/.zsh
 
 source $ZSHRC/zsh/sourceFile.zsh
 
+# Provide opportunity to make local changes
 sourceFile $HOME/.zshrc.local
 
 ## HISTORY, configure
@@ -16,13 +17,19 @@ export HISTIGNORE="&:bg:fg:ll:h"
 # export DISPLAY=":0.0"
 
 alias vless="vim -u ~/.vim/less.vim"
-# export PAGER=vless
+alias gvim='vim -g'
+export PAGER=vless
 
 alias ls='ls -AG'
 alias ll='ls -lhG'
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  source $ZSHRC/macos.zsh
+  sourceFile $ZSHRC/macos.zsh
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then
-  source $ZSHRC/linux.zsh
+  sourceFile $ZSHRC/linux.zsh
 fi
+
+# Source sub files
+sourceFile $ZSHRC/zsh/njoyclone.zsh
+sourceFile $ZSHRC/zsh/proxy.zsh
+sourceFile $ZSHRC/zsh/python.zsh
