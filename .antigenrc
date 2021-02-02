@@ -1,0 +1,8 @@
+
+# load the oh-my-zsh's library
+antigen use oh-my-zsh
+
+# Themes
+antigen theme eendroroy/alien alien
+
+antigen apply

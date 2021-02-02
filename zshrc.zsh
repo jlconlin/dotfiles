@@ -5,7 +5,9 @@ export ZSHRC=$HOME/.zsh
 
 source $ZSHRC/zsh/sourceFile.zsh
 
-sourceFile $HOME/.zsh/ohmy.zsh
+sourceFile $ZSHRC/antigen/antigen.zsh
+antigen init $ZSHRC/.antigenrc
+sourceFile $ZSHRC/ohmy.zsh
 sourceFile $ZSHRC/.bash/bashrc.bash
 
 # Provide opportunity to make local changes
