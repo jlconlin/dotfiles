@@ -7,10 +7,10 @@ export ZSHRC=$HOME/.zsh
 source $ZSHRC/zsh/sourceFile.zsh
 
 # sourceFile $ZSHRC/antigen.zsh
-# sourceFile $ZSHRC/ohmy.zsh
+sourceFile $ZSHRC/ohmy.zsh
 
 # Load all the bash stuff
-sourceFile $HOME/.bash/bashrc.bash
+# sourceFile $HOME/.bash/bashrc.bash
 
 # Provide opportunity to make local changes
 sourceFile $HOME/.zshrc.local
