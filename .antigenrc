@@ -1,15 +1,21 @@
 # load the oh-my-zsh's library
 antigen use oh-my-zsh
 
-# Plugins
-antigen bundle git
+antigen bundles << EOBUNDLES
+  
+  git
 
-# Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
+  # Syntax highlighting bundle.
+  zsh-users/zsh-syntax-highlighting
+
+EOBUNDLES
+# Plugins
+
 
 # Themes
-# antigen theme robbyrussel/oh-my-zsh themes/agnoster
-antigen theme crunch
+# antigen theme robbyrussell
+# antigen theme crunch
+antigen theme clean
 
 # Tell antigen that you're done
 antigen apply
