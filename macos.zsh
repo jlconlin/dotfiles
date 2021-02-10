@@ -10,4 +10,5 @@ export PATH=$VIM_APP_DIR/MacVim.app/Contents/MacOS:$PATH
 export EDITOR="$VIM_APP_DIR/MacVim.app/Contents/MacOS/Vim"
 
 alias vim=$EDITOR
+alias gvim="vim -g"
 

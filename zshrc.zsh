@@ -1,6 +1,15 @@
 # .zshrc
 printf "Executing ~/.zsh/zshrc.zsh\n"
 
+export HISTFILESIZE=10000
+export HISTSIZE=$HISTFILESIZE
+export HISTCONTROL=ignoredups:erasedups
+export HISTIGNORE="&:bg:fg:ll:h"
+
+unsetopt sharehistory
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+
 export ZSHRC=$HOME/.zsh
 
 # Get sourceFile command
@@ -20,6 +29,7 @@ sourceFile $ZSHRC/ohmy.zsh
 
 sourceFile $ZSHRC/zsh/njoyclone.zsh
 sourceFile $ZSHRC/zsh/python.zsh
+sourceFile $ZSHRC/zsh/proxy.zsh
 
 alias ls='ls -AG'
 alias ll='ls -lhG'
