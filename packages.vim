@@ -21,8 +21,10 @@ Plugin 'luochen1990/rainbow'
 Plugin 'wincent/terminus'
 " Plugin 'sedm0784/vim-you-autocorrect'
 Plugin 'AndrewRadev/linediff.vim'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+if has('python3')
+  Plugin 'SirVer/ultisnips'
+  Plugin 'honza/vim-snippets'
+endif
 Plugin 'godlygeek/tabular'
 " Plugin 'airblade/vim-gitgutter'
 " Plugin 'scrooloose/syntastic'
@@ -47,9 +49,9 @@ Plugin 'fortran.vim'
 Plugin 'ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/mcnp.vim.git'
 
 " Tags
-Plugin 'majutsushi/tagbar'
-Plugin 'Draiken/vim-easytags'
-Plugin 'xolox/vim-misc'
+" Plugin 'majutsushi/tagbar'
+" Plugin 'Draiken/vim-easytags'
+" Plugin 'xolox/vim-misc'
 
 " Plugin
 " Plugin 'vim-pandoc/vim-pandoc'

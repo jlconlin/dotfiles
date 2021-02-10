@@ -102,4 +102,4 @@ source ~/.vim/vimdirs.vim
 source ~/.vim/snippets.vim
 source ~/.vim/tags.vim
 source ~/.vim/mac.vim         " Settings unique to Mac
-source ~/.vim/powerline.vim
+" source ~/.vim/powerline.vim
