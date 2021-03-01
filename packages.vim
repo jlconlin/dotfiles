@@ -31,6 +31,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'simnalamburt/vim-mundo'
 Plugin 'chrisbra/unicode.vim'
 Plugin 'flwyd/vim-conjoin'
+Plugin 'andymass/vim-matchup'     " Improved matching using %
 
 " Fugitive Related plugins
 Plugin 'tpope/vim-fugitive'
