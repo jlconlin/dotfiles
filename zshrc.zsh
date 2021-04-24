@@ -6,9 +6,6 @@ export HISTSIZE=$HISTFILESIZE
 export HISTCONTROL=ignoredups:erasedups
 export HISTIGNORE="&:bg:fg:ll:h"
 
-unsetopt sharehistory
-setopt hist_ignore_dups
-setopt hist_ignore_all_dups
 
 export ZSHRC=$HOME/.zsh
 
@@ -25,7 +22,11 @@ elif [[ "$OSTYPE" == "linux-gnu" ]]; then
 fi
 
 sourceFile $ZSHRC/ohmy.zsh
-# sourceFile $ZSHRC/antigen.zsh
+
+unsetopt share_history      # This overrides what is in OhMyZsh
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt inc_append_history
 
 sourceFile $ZSHRC/zsh/njoyclone.zsh
 sourceFile $ZSHRC/zsh/python.zsh
