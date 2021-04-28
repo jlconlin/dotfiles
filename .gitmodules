@@ -4,6 +4,3 @@
 [submodule "antigen"]
 	path = antigen
 	url = https://github.com/zsh-users/antigen.git
-[submodule "bashrc.lanl"]
-	path = bashrc.lanl
-	url = ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/bashrc.lanl.git
