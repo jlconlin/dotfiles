@@ -33,16 +33,16 @@ Plug 'tpope/vim-fugitive'
 " Plug 'int3/vim-extradite'
 
 " Language-specific plugins
-Plug 'lervag/vimtex'
-Plug 'vim-scripts/XML-Folding'
-Plug 'elzr/vim-json'
-Plug 'tpope/vim-markdown'
+Plug 'lervag/vimtex', { 'for': 'latex' }
+Plug 'vim-scripts/XML-Folding', { 'for': 'xml' }
+Plug 'elzr/vim-json', { 'for': 'json' }
+Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'sheerun/vim-polyglot'
-Plug 'tmhedberg/simpylfold'
+Plug 'tmhedberg/simpylfold', { 'for': 'python' }
 " Plug 'python-mode/python-mode'
-Plug 'vim-scripts/fortran.vim'
+Plug 'vim-scripts/fortran.vim', { 'for': 'fortran' }
 " Plug 'Rykka/riv.vim'
-Plug 'ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/mcnp.vim.git'
+Plug 'ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/mcnp.vim.git', { 'for': 'mcnp' }
 
 " Tags
 Plug 'majutsushi/tagbar'
@@ -64,7 +64,7 @@ Plug 'xolox/vim-misc'
 Plug 'morhetz/gruvbox'
  
 " Games
-Plug 'vim/killersheep'
+" Plug 'vim/killersheep'
  
 " Personal plugins
 Plug 'jlconlin/ENDF.vim'      " Configuration for ENDF files
