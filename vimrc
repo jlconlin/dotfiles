@@ -3,8 +3,8 @@ set nocompatible              " be iMproved, required
 " set synmaxcol=100       " Don't syntax higlight beyond 100th column
 let g:polyglot_disabled = ['latex']
 
-source ~/.vim/python3.vim
-source ~/.vim/packages.vim
+"source ~/.vim/python3.vim
+source ~/.vim/Plug.vim
 
 filetype plugin indent on
 

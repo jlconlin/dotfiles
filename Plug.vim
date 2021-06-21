@@ -1,0 +1,74 @@
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'JLimperg/Align'
+Plug 'vim-scripts/VisIncr'
+" Plug 'ervandew/supertab.git'
+Plug 'tpope/vim-commentary'
+Plug 'Konfekt/FastFold'
+Plug 'wincent/command-t'
+Plug 'vim-voom/VOoM'
+Plug 'previm/previm'
+Plug 'luochen1990/rainbow'
+Plug 'wincent/terminus'
+" Plug 'sedm0784/vim-you-autocorrect'
+Plug 'AndrewRadev/linediff.vim'
+if has('python3')
+  Plug 'SirVer/ultisnips'
+  Plug 'honza/vim-snippets'
+endif
+Plug 'godlygeek/tabular'
+Plug 'airblade/vim-gitgutter'
+" Plug 'scrooloose/syntastic'
+Plug 'simnalamburt/vim-mundo'
+Plug 'chrisbra/unicode.vim'
+Plug 'flwyd/vim-conjoin'
+Plug 'andymass/vim-matchup'     " Improved matching using %
+Plug 'rickhowe/spotdiff.vim'    " Visually selectable partial diffs
+
+" Fugitive Related plugins
+Plug 'tpope/vim-fugitive'
+" Plug 'int3/vim-extradite'
+
+" Language-specific plugins
+Plug 'lervag/vimtex'
+Plug 'vim-scripts/XML-Folding'
+Plug 'elzr/vim-json'
+Plug 'tpope/vim-markdown'
+Plug 'sheerun/vim-polyglot'
+Plug 'tmhedberg/simpylfold'
+" Plug 'python-mode/python-mode'
+Plug 'vim-scripts/fortran.vim'
+" Plug 'Rykka/riv.vim'
+Plug 'ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/mcnp.vim.git'
+
+" Tags
+Plug 'majutsushi/tagbar'
+Plug 'Draiken/vim-easytags'
+Plug 'xolox/vim-misc'
+
+" Plug
+" Plug 'vim-pandoc/vim-pandoc'
+" Plug 'vim-pandoc/vim-pandoc-syntax'
+
+" Colorscheme plugins
+" Plug 'trevordmiller/nova-vim'
+" Plug 'fenetikm/falcon'
+" Plug 'christophermca/meta5'
+" Plug 'sickill/vim-monokai'
+" Plug 'altercation/vim-colors-solarized'
+" Plug 'abra/vim-obsidian'
+" Plug 'dracula/vim'
+Plug 'morhetz/gruvbox'
+ 
+" Games
+Plug 'vim/killersheep'
+ 
+" Personal plugins
+Plug 'jlconlin/ENDF.vim'      " Configuration for ENDF files
+Plug 'jlconlin/cpp.vim'       " Configuration for C++ files
+
+" All of your Plugs must be added before the following line
+call plug#end()
