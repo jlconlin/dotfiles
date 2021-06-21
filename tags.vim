@@ -33,3 +33,12 @@ let g:tagbar_type_ENDF = {
       \ 'm:mat'
   \ ]
 \}
+
+let g:tagbar_type_AbaqusINP = {
+    \ 'ctagstype' : 'AbaqusINP',
+    \ 'kinds' : [
+        \ 's:Section',
+        \ 'k:Keyword'
+    \ ],
+    \ 'sort' : 0
+\ }

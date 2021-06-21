@@ -26,12 +26,13 @@ if has('python3')
   Plugin 'honza/vim-snippets'
 endif
 Plugin 'godlygeek/tabular'
-" Plugin 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 " Plugin 'scrooloose/syntastic'
 Plugin 'simnalamburt/vim-mundo'
 Plugin 'chrisbra/unicode.vim'
 Plugin 'flwyd/vim-conjoin'
 Plugin 'andymass/vim-matchup'     " Improved matching using %
+Plugin 'rickhowe/spotdiff.vim'    " Visually selectable partial diffs
 
 " Fugitive Related plugins
 Plugin 'tpope/vim-fugitive'
@@ -50,9 +51,9 @@ Plugin 'fortran.vim'
 Plugin 'ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/mcnp.vim.git'
 
 " Tags
-" Plugin 'majutsushi/tagbar'
-" Plugin 'Draiken/vim-easytags'
-" Plugin 'xolox/vim-misc'
+Plugin 'majutsushi/tagbar'
+Plugin 'Draiken/vim-easytags'
+Plugin 'xolox/vim-misc'
 
 " Plugin
 " Plugin 'vim-pandoc/vim-pandoc'

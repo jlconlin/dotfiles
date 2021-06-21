@@ -88,6 +88,9 @@ autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 " Set a better commentstring for some filetypes
 autocmd FileType c,cpp,h,hpp,cs,java setlocal commentstring=//\ %s
 
+" Automatically trim white space https://vimtricks.com/p/vimtrick-trim-trailing-whitespace/
+autocmd BufWritePre *.md :%s/\s\+$//e 
+
 autocmd Filetype ENDF setlocal nofoldenable
 
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
@@ -102,4 +105,3 @@ source ~/.vim/vimdirs.vim
 source ~/.vim/snippets.vim
 source ~/.vim/tags.vim
 source ~/.vim/mac.vim         " Settings unique to Mac
-" source ~/.vim/powerline.vim
