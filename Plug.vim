@@ -36,7 +36,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'lervag/vimtex', { 'for': 'latex' }
 Plug 'vim-scripts/XML-Folding', { 'for': 'xml' }
 Plug 'elzr/vim-json', { 'for': 'json' }
-Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+" Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'sheerun/vim-polyglot'
 Plug 'tmhedberg/simpylfold', { 'for': 'python' }
 " Plug 'python-mode/python-mode'
