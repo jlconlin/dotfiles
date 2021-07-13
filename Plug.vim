@@ -43,7 +43,8 @@ Plug 'tmhedberg/simpylfold', { 'for': 'python' }
 " Plug 'python-mode/python-mode'
 Plug 'vim-scripts/fortran.vim', { 'for': 'fortran' }
 " Plug 'Rykka/riv.vim'
-Plug 'ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/mcnp.vim.git', { 'for': 'mcnp' }
+" Plug 'ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/mcnp.vim.git', { 'for': 'mcnp' }
+Plug 'g2boojum/vim-mcnp'
 
 " Tags
 Plug 'majutsushi/tagbar'
