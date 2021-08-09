@@ -15,6 +15,7 @@ endfunction
 
 command! Marked execute "!open % -a Marked\\ 2"
 nmap <silent> <leader>m :call OpenInMarked2() <CR> <CR>
+command! Chrome execute "!open % -a Google\\ Chrome"
 
 let g:vim_markdown_math = 1
 let g:vim_markdown_frontmatter=1  " Highlight YAML front matter of blog posts

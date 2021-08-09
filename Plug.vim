@@ -45,6 +45,7 @@ Plug 'vim-scripts/fortran.vim', { 'for': 'fortran' }
 " Plug 'Rykka/riv.vim'
 " Plug 'ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/mcnp.vim.git', { 'for': 'mcnp' }
 Plug 'g2boojum/vim-mcnp'
+Plug 'vim-scripts/clearsilver'
 
 " Tags
 Plug 'majutsushi/tagbar'
