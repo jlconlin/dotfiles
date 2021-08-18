@@ -31,6 +31,8 @@ setopt inc_append_history
 sourceFile $ZSHRC/zsh/njoyclone.zsh
 sourceFile $ZSHRC/zsh/python.zsh
 sourceFile $ZSHRC/zsh/proxy.zsh
+sourceFile $ZSHRC/zsh/bindkey.zsh
 
 alias ls='ls -AG'
 alias ll='ls -lhG'
+
