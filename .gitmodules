@@ -4,9 +4,9 @@
 [submodule "bashrc.lanl"]
 	path = bashrc.lanl
 	url = ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/bashrc.lanl.git
-[submodule "/Users/jlconlin/.zsh/custom/plugins/zsh-autosuggestions"]
-	path = /Users/jlconlin/.zsh/custom/plugins/zsh-autosuggestions
+[submodule "zsh-autosuggestions"]
+	path = custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule "/Users/jlconlin/.zsh/custom/plugins/zsh-syntax-highlighting"]
-	path = /Users/jlconlin/.zsh/custom/plugins/zsh-syntax-highlighting
+[submodule "zsh-syntax-highlighting"]
+	path = custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
