@@ -19,11 +19,15 @@ if has('termguicolors')
   set termguicolors
 endif
 
+let g:sh_fold_enabled=5
+let g:is_sh=1
+
 set encoding=UTF-8      " Set the default file encoding to UTF-8
 set autoread            " Automatically read a file that has been changed
 set backspace=indent,eol,start  " backspace through everything in insert mode
 set nowrap              " Don't wrap lines
 set foldmethod=syntax   " Fold code by define syntax
+set foldnestmax=2       " Don't nest folds more than this
 set textwidth=80        " Make vim automatically wrap at 80 characters
 set ruler               " Always show status bar on bottom
 set number              " Show line numbers
