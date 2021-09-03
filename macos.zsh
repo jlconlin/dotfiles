@@ -1,5 +1,6 @@
-printf "Executing $ZSHRC/macos.zsh\n"
 # Configuration specific to MacOS
+
+# printf "Executing $ZSHRC/macos.zsh\n"
 export ZSHRC_MACOS=$ZSHRC/macos
 
 ulimit -n 2048
