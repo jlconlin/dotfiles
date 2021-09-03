@@ -1,5 +1,5 @@
 # .zshrc
-printf "Executing ~/.zsh/zshrc.zsh\n"
+# printf "Executing ~/.zsh/zshrc.zsh\n"
 
 export HISTFILESIZE=10000
 export HISTSIZE=$HISTFILESIZE

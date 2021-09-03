@@ -1,12 +1,12 @@
 [submodule "ohmyzsh"]
 	path = ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
-[submodule "antigen"]
-	path = antigen
-	url = https://github.com/zsh-users/antigen.git
 [submodule "bashrc.lanl"]
 	path = bashrc.lanl
 	url = ssh://git@xcp-stash.lanl.gov:7999/~jlconlin/bashrc.lanl.git
 [submodule "/Users/jlconlin/.zsh/custom/plugins/zsh-autosuggestions"]
 	path = /Users/jlconlin/.zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "/Users/jlconlin/.zsh/custom/plugins/zsh-syntax-highlighting"]
+	path = /Users/jlconlin/.zsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
