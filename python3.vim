@@ -1,4 +1,4 @@
-if has('python3')
+if has('python3') || has('python3_dynamic')
   set pythonthreedll=$PYTHON3
-  set pythonthreehome=$PYTHON3HOME
+  set pythonthreehome=$PYTHON3_HOME
 endif

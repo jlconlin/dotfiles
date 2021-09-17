@@ -15,7 +15,7 @@ Plug 'luochen1990/rainbow'
 Plug 'wincent/terminus'
 " Plug 'sedm0784/vim-you-autocorrect'
 Plug 'AndrewRadev/linediff.vim'
-if has('python3')
+if has('python3') || has('python3_dynamic')
   Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
 endif
