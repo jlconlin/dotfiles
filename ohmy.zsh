@@ -74,6 +74,7 @@ plugins=(
   gitfast
   zsh-autosuggestions
   zsh-syntax-highlighting
+  osx
   )
 
 source $ZSH/oh-my-zsh.sh
