@@ -4,15 +4,15 @@ proxy(){
 	case $1 in
 		start)
       echo "setting proxy..."
-			export http_proxy="$PROXY_SERVER"
-			export https_proxy="$PROXY_SERVER"
+			export http_proxy="http://$PROXY_SERVER"
+			export https_proxy="https://$PROXY_SERVER"
       export ftp_proxy="$PROXY_SERVER"
 			export HTTP_PROXY=$http_proxy
 			export HTTPS_PROXY=$https_proxy
       export FTP_PROXY=$ftp_proxy
 			export all_proxy=$PROXY_SERVER
 			export ALL_PROXY=$PROXY_SERVER
-			export NO_PROXY=localhost,192.168.*,10.250.*,127.0.*
+			export NO_PROXY=$no_proxy,localhost,192.168.*,10.250.*,127.0.*
       git config --global http.proxy $PROXY_SERVER
       git config --global https.proxy $PROXY_SERVER
       ;;
@@ -31,15 +31,9 @@ proxy(){
       git config --global --unset https.proxy
       ;;
 		status)
-      echo "http_proxy=$http_proxy"
-			echo "HTTP_PROXY=$HTTP_PROXY"
-			echo "https_proxy=$https_proxy"
-      echo "HTTPS_PROXY=$HTTPS_PROXY"
-			echo "ftp_proxy=$ftp_proxy"
-			echo "FTP_PROXY=$FTP_PROXY"
-      echo "all_proxy=$all_proxy"
-      echo "ALL_PROXY=$ALL_PROXY"
-			echo "NO_PROXY=$NO_PROXY"
+			for proxyVar in `export | grep -i proxy`; do
+				echo $proxyVar;
+			done
       echo "git http.proxy" `git config --global --get http.proxy`
       echo "git https.proxy" `git config --global --get https.proxy`
 			;;
