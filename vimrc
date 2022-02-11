@@ -74,7 +74,7 @@ nnoremap <c-l> <c-w>l
 :cnoremap <C-A> <home>
 :cnoremap <C-E> <end>
 
-let mapleader="\\"
+" let mapleader="\\"
 
 :cabbrev Help vert h
 
@@ -105,6 +105,10 @@ let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 let g:vimtex_fold_enabled = 1
 let g:tex_flavor='latex'
+
+"😄
+set completefunc=emoji#complete
+:command Emoji %s/:\([^:]\+\):/\=emoji#for(submatch(1), submatch(0))/g 
 
 source ~/.vim/vimdirs.vim
 source ~/.vim/snippets.vim

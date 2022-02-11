@@ -91,22 +91,6 @@ snippet email "email command" w
 \email{${1:${VISUAL:@lanl.gov}}}$0
 endsnippet
 
-snippet () "Parentheses surround" Ai
-(${1:${VISUAL}})$0
-endsnippet
-
-snippet [] "Bracket surround" Ai
-[${1:${VISUAL}}]$0
-endsnippet
-
-snippet {} "Brace surround" Ai
-{${1:${VISUAL}}}$0
-endsnippet
-
-snippet <> "Angle surround" Ai
-<${1:${VISUAL}}>$0
-endsnippet
-
 snippet ibv "ibibleverse" i
 \ibibleverse{${1}}(${2})$0
 endsnippet
@@ -130,4 +114,9 @@ endsnippet
 snippet note "Beamer note"
 \note{${1:${VISUAL}}}$0
 endsnippet
+
+snippet vsp "vspace" 
+\vspace{${1:2ex}}$0
+endsnippet
+	
 	

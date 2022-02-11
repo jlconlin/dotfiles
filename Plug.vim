@@ -27,6 +27,11 @@ Plug 'chrisbra/unicode.vim'
 Plug 'flwyd/vim-conjoin'
 Plug 'andymass/vim-matchup'     " Improved matching using %
 Plug 'rickhowe/spotdiff.vim'    " Visually selectable partial diffs
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'rickhowe/spotdiff.vim'
+Plug 'rickhowe/diffchar.vim'
+Plug 'junegunn/vim-emoji'
+Plug 'rti/vim-auto-save'
 
 " Fugitive Related plugins
 Plug 'tpope/vim-fugitive'
@@ -36,9 +41,12 @@ Plug 'tpope/vim-fugitive'
 Plug 'lervag/vimtex', { 'for': 'latex' }
 Plug 'vim-scripts/XML-Folding', { 'for': 'xml' }
 Plug 'elzr/vim-json', { 'for': 'json' }
+Plug 'sheerun/vim-polyglot'
+let g:polyglot_disabled = ['markdown']
 " Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-Plug 'sheerun/vim-polyglot'
+" Plug 'gabrielelana/vim-markdown', { 'for': 'markdown' }
+" Plug 'aareman/vim-markdown', { 'for': 'markdown' }
 Plug 'tmhedberg/simpylfold', { 'for': 'python' }
 " Plug 'python-mode/python-mode'
 Plug 'vim-scripts/fortran.vim', { 'for': 'fortran' }
@@ -47,6 +55,7 @@ Plug 'vim-scripts/fortran.vim', { 'for': 'fortran' }
 Plug 'g2boojum/vim-mcnp'
 Plug 'vim-scripts/clearsilver'
 Plug 'rbonvall/snipmate-snippets-bib'
+Plug 'gradzikb/vim-abaqus'
 
 " Tags
 Plug 'majutsushi/tagbar'

@@ -26,13 +26,34 @@ people:
 endsnippet
 
 snippet cite "citation command for jekyll-scholar"
-{% cite ${1:${VISUAL}} %} $0
+{% cite ${1:${VISUAL}} %}$0
 endsnippet
 
 snippet link "Jekyll link" i
 {% link ${1:${VISUAL}} %}$0
 endsnippet
 
+snippet post_url "link to Jekyll post" i
+{% post_url ${1:${VISUAL}} %}$0
+endsnippet
+
 snippet [ "link" 
 [$1](${2:${VISUAL}})$0
 endsnippet
+
+snippet image "Include image" b
+{% include image.html url="${1:${VISUAL}}" alt="${2}" %}${0}
+endsnippet
+
+snippet $ "Insert math" i
+$$${1:${VISUAL}}$$${0}
+endsnippet  
+
+snippet ndlg "nucleardata.lanl.gov" i
+nucleardata.lanl.gov${0}
+endsnippet
+
+snippet https "<https://...>" i
+<https://${1:${VISUAL}}>${0}
+endsnippet
+  
