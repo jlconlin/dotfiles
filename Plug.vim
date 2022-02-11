@@ -31,6 +31,7 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'rickhowe/spotdiff.vim'
 Plug 'rickhowe/diffchar.vim'
 Plug 'junegunn/vim-emoji'
+Plug 'rti/vim-auto-save'
 
 " Fugitive Related plugins
 Plug 'tpope/vim-fugitive'
