@@ -1,5 +1,5 @@
 set guioptions+=b   " Add bottom scrollbar
-set columns=200
+set columns=100
 set lines=75
 " set bg=light
 
