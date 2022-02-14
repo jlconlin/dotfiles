@@ -109,6 +109,9 @@ let g:tex_flavor='latex'
 set completefunc=emoji#complete
 :command Emoji %s/:\([^:]\+\):/\=emoji#for(submatch(1), submatch(0))/g 
 
+" enable AutoSave on Vim startup
+let g:auto_save = 1  
+
 source ~/.vim/vimdirs.vim
 source ~/.vim/snippets.vim
 source ~/.vim/tags.vim
