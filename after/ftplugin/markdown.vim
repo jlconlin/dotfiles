@@ -19,12 +19,12 @@ command! Chrome execute "!open % -a Google\\ Chrome"
 
 " plasticboy plugin configuration
 let g:vim_markdown_math = 1
-let g:vim_markdown_frontmatter=1  " Highlight YAML front matter of blog posts
+let g:vim_markdown_frontmatter = 1  " Highlight YAML front matter of blog posts
 let g:vim_markdown_new_list_item_indent = 2
-
-" gabrielelana plugin configuration
-" let g:markdown_enable_insert_mode_leader_mappings=1
-" let g:markdown_enable_conceal=1
+let g:vim_markdown_folding_style_pythonic = 1
+let g:vim_markdown_folding_level = 2  " Don't fold top level
+let g:vim_markdown_toc_autofit = 1
+let g:vim_markdown_conceal = 0  " I generally don't like concealing things
 
 if has('python3')
   :UltiSnipsAddFiletypes markdown.liquid.pandoc.html
