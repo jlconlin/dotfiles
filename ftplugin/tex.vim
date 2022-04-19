@@ -30,23 +30,11 @@ set cole=0
 set breakindent
 set breakindentopt=shift:2
 
-" Maps for quickly inserting integrals
-" call IMAP (g:Tex_Leader.'I', "\\int_{<++>}^{<++>} <++> d<++>", 'tex')
-" call IMAP (g:Tex_Leader.'i', "\\int <++> d<++>", 'tex')
-" call IMAP ('_', '_{<++>}<++>', 'tex')
-" call IMAP ('^', '^{<++>}<++>', 'tex')
-
-" call IMAP ('\iso', '\isotope[<++>]{<++>}<++>', 'tex')
-" call IMAP ('\SI', '\SI{<++>}{\<++>}<++>', 'tex')
-" call IMAP ('\si', '\si{\<++>}<++>', 'tex')
-" call IMAP ('\num', '\num{<++>}<++>', 'tex')
-
 " Options for FastFold
 let g:tex_fold_enabled = 1  " Update tex folds when saving file
 
 " Turn off indication of indents
 let g:indentLine_enabled = 0
 
-" Commands to help with converting unit-ed numbers to use siunitx
-" nmap <C-i> c2aW<C-R>=substitute(@", '\v(\S+)\s+(\S+)', '\\SI{\1}{\2}', '')<CR><ESC>2hvF{l
-" vmap <C-i> c<C-R>=substitute(@", '\v(\S+)\s+(\S+)', '\\SI{\1}{\2}', '')<CR><ESC>hvF{l
+" Don't enable AutoSave on Vim startup
+let g:auto_save = 0  
