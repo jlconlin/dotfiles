@@ -56,6 +56,7 @@ Plug 'g2boojum/vim-mcnp'
 Plug 'vim-scripts/clearsilver'
 Plug 'rbonvall/snipmate-snippets-bib'
 Plug 'gradzikb/vim-abaqus'
+Plug 'ettaka/vim-apdl'
 
 " Tags
 Plug 'majutsushi/tagbar'
