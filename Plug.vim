@@ -32,13 +32,14 @@ Plug 'rickhowe/spotdiff.vim'
 Plug 'rickhowe/diffchar.vim'
 Plug 'junegunn/vim-emoji'
 Plug 'rti/vim-auto-save'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " Fugitive Related plugins
 Plug 'tpope/vim-fugitive'
 " Plug 'int3/vim-extradite'
 
 " Language-specific plugins
-Plug 'lervag/vimtex', { 'for': 'latex' }
+Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'vim-scripts/XML-Folding', { 'for': 'xml' }
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'sheerun/vim-polyglot'
