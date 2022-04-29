@@ -33,6 +33,6 @@ sourceFile $ZSHRC/zsh/python.zsh
 sourceFile $ZSHRC/zsh/proxy.zsh
 sourceFile $ZSHRC/zsh/bindkey.zsh
 
-alias ls='ls -AG'
-alias ll='ls -lhG'
+alias ls='ls -AF --color=auto'
+alias ll='ls -lhF --color=auto'
 
