@@ -13,3 +13,5 @@ export EDITOR="$VIM_APP_DIR/MacVim.app/Contents/MacOS/Vim"
 alias vim=$EDITOR
 alias gvim="vim -g"
 
+alias ls='ls -AG'
+alias ll='ls -lhG'
