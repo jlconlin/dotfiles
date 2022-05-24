@@ -2,6 +2,9 @@ snippet post "Lab Notebook Post" b
 ---
 title: ${1: `date "+%B %d, %Y, %A"`}
 date: `date "+%Y-%m-%d %H:%M"`
+location:
+  `CoreLocationCLI --format "latitude: %latitude
+  longitude: %longitude"`
 tags: 
   - ${2}
 people:
