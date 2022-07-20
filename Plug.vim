@@ -58,6 +58,7 @@ Plug 'vim-scripts/clearsilver'
 Plug 'rbonvall/snipmate-snippets-bib'
 Plug 'gradzikb/vim-abaqus'
 Plug 'ettaka/vim-apdl'
+Plug 'tpope/vim-liquid'
 
 " Tags
 Plug 'majutsushi/tagbar'

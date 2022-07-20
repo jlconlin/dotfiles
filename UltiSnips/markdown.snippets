@@ -13,13 +13,27 @@ people:
 ${0}
 endsnippet
 	
+snippet page "Lab Notebook Page" b
+---
+title: ${1}
+date: `date "+%Y-%m-%d %H:%M"`
+layout: single
+tags: 
+  - ${2}
+---
+${0}
+endsnippet
+	
 snippet meeting "Lab Notebook Meeting" b
 ---
-title: ${1: `date "+%B %d, %Y, %A"`}
+title: ${1:`date "+%B %d, %Y, %A"`}
 date: `date "+%Y-%m-%d"`
 end: `date "+%Y-%m-%d"`
 layout: meeting
 type: meeting
+location:
+  `CoreLocationCLI --format "latitude: %latitude
+  longitude: %longitude"`
 tags: 
   - ${2}
 people:
@@ -36,7 +50,7 @@ snippet link "Jekyll link" i
 {% link ${1:${VISUAL}} %}$0
 endsnippet
 
-snippet post_url "link to Jekyll post" i
+snippet pu "link to Jekyll post" i
 {% post_url ${1:${VISUAL}} %}$0
 endsnippet
 
@@ -45,7 +59,7 @@ snippet [ "link"
 endsnippet
 
 snippet image "Include image" b
-{% include image.html url="${1:${VISUAL}}" alt="${2}" %}${0}
+{% include image.html url="${1:${VISUAL}}" alt="${2:$1}" %}${0}
 endsnippet
 
 snippet $ "Insert math" i
@@ -60,3 +74,13 @@ snippet https "<https://...>" i
 <https://${1:${VISUAL}}>${0}
 endsnippet
   
+snippet map "Google Maps tag" b
+{% google_map ${1:src="_data/places.yml"} zoom="${2:17}"%}
+$0
+endsnippet
+
+snippet location "Get location from CoreLocationCLI" b
+location:
+  `CoreLocationCLI --format "latitude: %latitude
+  longitude: %longitude"`
+endsnippet
