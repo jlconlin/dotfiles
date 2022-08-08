@@ -71,8 +71,16 @@ snippet figure "jekyll-figure"
 ${0}
 endsnippet
 
-snippet term "term tag" b
-{% term ${1} ${2:SafetyBasis} %} $0
+snippet term "term tag" i
+{% term ${1:${VISUAL}} ${2:SB} %}$0
+endsnippet
+
+snippet code "code tag" i
+{% code ${1:${VISUAL}} %}$0
+endsnippet
+	
+snippet stat "ST/AT tag" i
+{% ST_AT ${1:${VISUAL}} %}$0
 endsnippet
 	
 # vim:ft=snippets:

@@ -5,6 +5,20 @@ snippet name "Jekyll metadata"
 		"fore": "${2}",
 		"sur": "$1"
 	},
-	"email": ${4}
+	"email": "${4}"
 }, ${0}
+endsnippet
+
+snippet term "Terminology metadata" b
+"${1}": {
+	"definition": "${2}",
+	"details": "${3}"
+},
+endsnippet
+
+snippet code "Code metadata" b
+"${1}": {
+	"name": "${2}",
+	"path": "/Codes/$1"
+},
 endsnippet
