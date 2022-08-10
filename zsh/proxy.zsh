@@ -15,6 +15,8 @@ proxy(){
 			export NO_PROXY=$no_proxy,localhost,192.168.*,10.250.*,127.0.*
       git config --global http.proxy $PROXY_SERVER
       git config --global https.proxy $PROXY_SERVER
+			npm config set proxy http://$PROXY_SERVER
+			npm config set https-proxy http://$PROXY_SERVER
       ;;
 		stop)
       echo "stopping proxy..."
@@ -29,6 +31,8 @@ proxy(){
 			unset NO_PROXY
       git config --global --unset http.proxy
       git config --global --unset https.proxy
+			npm config rm proxy
+			npm config rm https-proxy
       ;;
 		status)
 			for proxyVar in `export | grep -i proxy`; do
