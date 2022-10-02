@@ -64,13 +64,6 @@ ${2:${VISUAL}}
 {% endhighlight %}
 endsnippet
 
-snippet figure "jekyll-figure"
-{% figure caption:${1:"Caption (markdown)"} %}
-  {% include image.html url="${2:${VISUAL}}" %}
-{% endfigure %}
-${0}
-endsnippet
-
 snippet term "term tag" i
 {% term ${1:${VISUAL}} ${2:SB} %}$0
 endsnippet
@@ -79,8 +72,18 @@ snippet code "code tag" i
 {% code ${1:${VISUAL}} %}$0
 endsnippet
 	
-snippet stat "ST/AT tag" i
-{% ST_AT ${1:${VISUAL}} %}$0
+snippet facil "facility tag" i
+{% facility ${1:${VISUAL}} %}$0
 endsnippet
 	
+snippet org "facility tag" i
+{% org ${1:${VISUAL}} %}$0
+endsnippet
+	
+snippet stat "ST/AT tag" i
+{% STAT $1 %}
+${2:${VISUAL}}
+{% endSTAT %}
+$0
+endsnippet
 # vim:ft=snippets:

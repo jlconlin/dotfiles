@@ -33,6 +33,7 @@ Plug 'rickhowe/diffchar.vim'
 Plug 'junegunn/vim-emoji'
 Plug 'rti/vim-auto-save'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'parkr/vim-jekyll'
 
 " Fugitive Related plugins
 Plug 'tpope/vim-fugitive'
