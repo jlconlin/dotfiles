@@ -58,13 +58,14 @@ set sbo-=ver            " Default to horizontal scrollbinding instead of vertica
 set sbo+=hor
 set cursorline          " Highlight current line
 set splitright          " New split window will be on right of current window
+set showbreak=↪\  
+set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨,space:␣
 
 set sessionoptions=blank,curdir,folds,help,options,resize,tabpages,winsize
 set printoptions=paper:letter,number:y,duplex:off,left:5pc
 
 " Create a new file based on today's date
 :command! Post execute 'edit ' .. strftime('%Y-%m-%d-%B%d') .. '.md'
-" command Post e !`date +%Y-%m-%d-%B%d`.md
 
 " Navigate vim splits like a sane person
 nnoremap <c-j> <c-w>j
