@@ -34,6 +34,7 @@ Plug 'junegunn/vim-emoji'
 Plug 'rti/vim-auto-save'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'parkr/vim-jekyll'
+Plug 'junegunn/vim-peekaboo'
 
 " Fugitive Related plugins
 Plug 'tpope/vim-fugitive'
@@ -43,8 +44,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'vim-scripts/XML-Folding', { 'for': 'xml' }
 Plug 'elzr/vim-json', { 'for': 'json' }
-Plug 'sheerun/vim-polyglot'
 let g:polyglot_disabled = ['markdown']
+Plug 'sheerun/vim-polyglot'
 " Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 " Plug 'gabrielelana/vim-markdown', { 'for': 'markdown' }
