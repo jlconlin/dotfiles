@@ -3,9 +3,6 @@ snippet post "Lab Notebook Post" b
 ---
 title: ${1:`date "+%B %d, %Y, %A"`}
 date: `date "+%Y-%m-%d"`
-location:
-  `CoreLocationCLI --format "latitude: %latitude
-  longitude: %longitude"`
 ---
 ${0}
 endsnippet
@@ -56,10 +53,6 @@ snippet $ "Insert math" i
 $$${1:${VISUAL}}$$${0}
 endsnippet  
 
-snippet ndlg "nucleardata.lanl.gov" i
-nucleardata.lanl.gov${0}
-endsnippet
-
 snippet https "<https://...>" i
 <https://${1:${VISUAL}}>${0}
 endsnippet
@@ -82,3 +75,10 @@ endsnippet
 snippet notice "Kramdown notice" b
 {: .notice--${1:info}}$0
 endsnippet  
+
+snippet sbbriefing "Safety Basis Daily Briefing" b
+## SB Daily Briefing
+
+### Technical Services
+${0}
+endsnippet
