@@ -28,7 +28,7 @@ let g:vim_markdown_toc_autofit = 1
 let g:vim_markdown_conceal = 0  " I generally don't like concealing things
 
 if has('python3')
-  :UltiSnipsAddFiletypes markdown.liquid.pandoc.html
+  :UltiSnipsAddFiletypes markdown.liquid.pandoc.html.SB
 endif
 
 " Don't enable AutoSave on Vim startup

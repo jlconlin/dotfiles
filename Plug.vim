@@ -34,6 +34,7 @@ Plug 'rti/vim-auto-save'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'parkr/vim-jekyll'
 Plug 'junegunn/vim-peekaboo'
+Plug 'tpope/vim-speeddating'
 
 " Fugitive Related plugins
 Plug 'tpope/vim-fugitive'

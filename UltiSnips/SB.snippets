@@ -1,0 +1,134 @@
+# Safety Basis Snippets for markdown
+extends markdown
+
+snippet TSD "TSD terminology" b
+{% term TSD SB %}
+endsnippet
+	
+snippet sbb "Safety Basis Daily Briefing" b
+## SB Daily Briefing
+
+### Technical Services
+${0}
+endsnippet
+
+snippet term "term tag" i
+{% term ${1:${VISUAL}} ${2:SB} %}$0
+endsnippet
+
+snippet code "code tag" i
+{% code ${1:${VISUAL}} %}$0
+endsnippet
+	
+snippet facil "facility tag" i
+{% facility ${1:${VISUAL}} %}$0
+endsnippet
+	
+snippet org "org tag" i
+{% org ${1:${VISUAL}} %}$0
+endsnippet
+	
+snippet stat "ST/AT tag" i
+{% STAT $1 %}
+${2:${VISUAL}}
+{% endSTAT %}
+$0
+endsnippet
+
+snippet standard "standard tag" i
+{% standard ${1:${VISUAL}} DOE %}$0
+endsnippet
+
+snippet order "order tag" i
+{% order ${1:${VISUAL}} DOE %}$0
+endsnippet
+
+snippet CFR "CFR tag" i
+{% CFR ${1:${VISUAL}} ${2} %}$0
+endsnippet
+	
+snippet c/Q "ꭓ/Q" i
+ꭓ/Q$0
+endsnippet
+
+# Terms
+snippet DSA "DSA term tag" i
+{% term DSA SB %}$0
+endsnippet
+
+snippet TSD "TSD term tag" i
+{% term TSD SB %}$0
+endsnippet
+
+snippet FHC "FHC term tag" i
+{% term FHC SB %}$0
+endsnippet
+
+snippet TSR "TSR term tag" i
+{% term TSR SB %}$0
+endsnippet
+
+snippet LPF "LPF term tag" i
+{% term LPF SB %}$0
+endsnippet
+
+snippet S/A "SAD/ASE term tag" i
+{% term SAD/ASE SB %}$0
+endsnippet
+
+snippet ST/AT "ST/AT term tag" i
+{% term ST/AT SB %}$0
+endsnippet
+
+snippet FOD "FOD term tag" i
+{% term FOD LANL %}$0
+endsnippet
+
+# Codes
+snippet Pf "Pathfinder code tag" i
+{% code Pathfinder %}$0
+endsnippet
+
+snippet MACCS "MACCS code tag" i
+{% code MACCS %}$0
+endsnippet
+
+snippet MELCOR "MELCOR code tag" i
+{% code MELCOR %}$0
+endsnippet
+
+snippet CFAST "CFAST code tag" i
+{% code CFAST %}$0
+endsnippet
+
+# Facilities
+snippet P&T "P&T facility tag" i
+{% facility P&T %}$0
+endsnippet
+	
+snippet DARHT "DARHT facility tag" i
+{% facility DARHT %}$0
+endsnippet
+	
+snippet LANSCE "LANSCE facility tag" i
+{% facility LANSCE %}$0
+endsnippet
+	
+# Orders
+snippet 420.2D "420.2D order tag" i
+{% order 420.2D DOE %}$0
+endsnippet
+
+# Orgs
+snippet NA-LA "NA-LA org tag" i
+{% org NA-LA %}$0
+endsnippet
+	
+snippet DNFSB "DNFSB org tag" i
+{% org DNFSB %}$0
+endsnippet
+	
+snippet DOE "DOE org tag" i
+{% org DOE %}$0
+endsnippet
+	
