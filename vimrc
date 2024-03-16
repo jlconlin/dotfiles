@@ -1,6 +1,6 @@
 set nocompatible              " be iMproved, required
 set pyxversion=3
-source ~/.vim/python3.vim
+" source ~/.vim/python3.vim
 
 " set synmaxcol=100       " Don't syntax higlight beyond 100th column
 let g:polyglot_disabled = ['latex']

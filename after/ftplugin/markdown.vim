@@ -8,6 +8,7 @@ set breakindentopt=shift:2
 
 setlocal textwidth=0    " Prevent automatic line breaking in markdown files
 set colorcolumn=0       " Don't highlight any column
+set shiftwidth=2
 
 function OpenInMarked2()
   !open % -a Marked\ 2.app 
@@ -27,7 +28,7 @@ let g:vim_markdown_toc_autofit = 1
 let g:vim_markdown_conceal = 0  " I generally don't like concealing things
 
 if has('python3')
-  :UltiSnipsAddFiletypes markdown.liquid.pandoc.html
+  :UltiSnipsAddFiletypes markdown.liquid.pandoc.html.SB
 endif
 
 " Don't enable AutoSave on Vim startup
