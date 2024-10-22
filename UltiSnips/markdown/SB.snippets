@@ -1,10 +1,6 @@
 # Safety Basis Snippets for markdown
 extends markdown
 
-snippet TSD "TSD terminology" b
-{% term TSD SB %}
-endsnippet
-	
 snippet sbb "Safety Basis Daily Briefing" b
 ## SB Daily Briefing
 
@@ -35,7 +31,7 @@ ${2:${VISUAL}}
 $0
 endsnippet
 
-snippet standard "standard tag" i
+snippet std "standard tag" i
 {% standard ${1:${VISUAL}} DOE %}$0
 endsnippet
 
@@ -52,23 +48,19 @@ snippet c/Q "ꭓ/Q" i
 endsnippet
 
 # Terms
-snippet DSA "DSA term tag" i
+snippet "(?<!{% term )DSA" "DSA term tag" ir
 {% term DSA SB %}$0
 endsnippet
 
-snippet TSD "TSD term tag" i
-{% term TSD SB %}$0
-endsnippet
-
-snippet FHC "FHC term tag" i
+snippet "(?<!{% term )FHC" "FHC term tag" ir
 {% term FHC SB %}$0
 endsnippet
 
-snippet TSR "TSR term tag" i
+snippet "(?<!{% term )TSR" "TSR term tag" ir
 {% term TSR SB %}$0
 endsnippet
 
-snippet LPF "LPF term tag" i
+snippet "(?<!{% term )LPF" "LPF term tag" ir
 {% term LPF SB %}$0
 endsnippet
 
@@ -85,7 +77,15 @@ snippet FOD "FOD term tag" i
 endsnippet
 
 snippet c/Q "ꭓ/Q" i
-{% term ꭓ/Q LANL %}$0
+{% term ꭓ/Q SB %}$0
+endsnippet
+
+snippet wrt "With Respect to" i
+{% term WRT misc %}$0
+endsnippet
+	
+snippet AI "AI" i
+{% term AI misc %}$0
 endsnippet
 # Codes
 snippet Pf "Pathfinder code tag" i
@@ -104,34 +104,18 @@ snippet CFAST "CFAST code tag" i
 {% code CFAST %}$0
 endsnippet
 
-# Facilities
-snippet P&T "P&T facility tag" i
-{% facility P&T %}$0
-endsnippet
-	
-snippet DARHT "DARHT facility tag" i
-{% facility DARHT %}$0
-endsnippet
-	
-snippet LANSCE "LANSCE facility tag" i
-{% facility LANSCE %}$0
-endsnippet
-	
 # Orders
-snippet 420.2D "420.2D order tag" i
+snippet "(?<!{% order )420.2D" "420.2D order tag" ir
 {% order 420.2D DOE %}$0
 endsnippet
 
-# Orgs
-snippet NA-LA "NA-LA org tag" i
-{% org NA-LA %}$0
+# Standards
+snippet "(?<!{% standard )3009" "3009-2014 tag" ir
+{% standard 3009-2014 DOE %}$0
 endsnippet
-	
-snippet DNFSB "DNFSB org tag" i
-{% org DNFSB %}$0
+
+snippet "(?<!{% standard )1189" "1189-2016 tag" ir
+{% standard 1189-2016 DOE %}$0
 endsnippet
-	
-snippet DOE "DOE org tag" i
-{% org DOE %}$0
-endsnippet
+
 	

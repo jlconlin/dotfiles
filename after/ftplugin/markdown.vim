@@ -32,4 +32,4 @@ if has('python3')
 endif
 
 " Don't enable AutoSave on Vim startup
-let g:auto_save = 0  
+let g:auto_save = 0
