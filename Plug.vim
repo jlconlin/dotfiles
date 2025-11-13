@@ -36,6 +36,8 @@ Plug 'parkr/vim-jekyll'
 Plug 'junegunn/vim-peekaboo'
 Plug 'tpope/vim-speeddating'
 
+Plug 'madox2/vim-ai'
+
 " Fugitive Related plugins
 Plug 'tpope/vim-fugitive'
 " Plug 'int3/vim-extradite'
