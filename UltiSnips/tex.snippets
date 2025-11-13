@@ -64,7 +64,7 @@ snippet only "beamer only command" b
 endsnippet
 
 snippet uncover "beamer uncover command" b
-\unvover<${1:1}>{${2:${VISUAL}}}$0
+\uncover<${1:1}>{${2:${VISUAL}}}$0
 endsnippet
 
 snippet surround "surround with some stuff" i
@@ -119,4 +119,25 @@ snippet vsp "vspace"
 \vspace{${1:2ex}}$0
 endsnippet
 	
+snippet sloppypar "Sloppypar paragraph" b
+\begin{sloppypar}
+${1:${VISUAL}}
+\end{sloppypar}$0
+endsnippet
 	
+# Snippets for the bibleref LaTeX package
+snippet Matthew "Matthew bible reference" w
+\ibibleverse{Matthew}($1)$0
+endsnippet
+
+snippet Mark "Mark bible reference" w
+\ibibleverse{Mark}($1)$0
+endsnippet
+
+snippet Luke "Luke bible reference" w
+\ibibleverse{Luke}($1)$0
+endsnippet
+
+snippet John "John bible reference" w
+\ibibleverse{John}($1)$0
+endsnippet
