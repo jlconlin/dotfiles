@@ -1,4 +1,4 @@
-extends html, liquid, revealjs
+extends html, liquid, revealjs, markdown
 snippet post "Lab Notebook Post" b
 ---
 title: ${1:`date "+%B %d, %Y, %A"`}
@@ -80,3 +80,12 @@ snippet term "term tag" i
 {% term ${1:${VISUAL}} ${2:LANL} %}$0
 endsnippet
 
+snippet mermaid "Create mermaid diagram" b
+\`\`\`mermaid!
+${1}
+\`\`\`
+endsnippet
+
+snippet email "email link" b
+[email](message://$1)$0
+endsnippet

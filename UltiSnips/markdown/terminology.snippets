@@ -1,0 +1,58 @@
+# Dynamic terminology snippets
+extends markdown
+
+global !p
+import json
+import os
+
+def in_labnotebook():
+    """Check if current file is in LabNotebook directory"""
+    filepath = vim.eval('expand("%:p")')
+    return filepath.startswith("/Users/jlconlin/Documents/LabNotebook/")
+
+def load_all_terms():
+    """Load all terminology from JSON files"""
+    base_path = "/Users/jlconlin/Documents/LabNotebook/_data/terminology"
+    terms = {}
+
+    if not os.path.exists(base_path):
+        return terms
+
+    for filename in os.listdir(base_path):
+        if not filename.endswith('.json'):
+            continue
+
+        category = filename[:-5]  # Remove .json
+        filepath = os.path.join(base_path, filename)
+
+        try:
+            with open(filepath, 'r') as f:
+                data = json.load(f)
+                for acronym in data.keys():
+                    terms[acronym] = category
+        except:
+            pass
+
+    return terms
+
+def get_term_snippet(acronym):
+    """Generate term tag for given acronym"""
+    terms = load_all_terms()
+    if acronym in terms:
+        category = terms[acronym]
+        return "{{% term {} {} %}}".format(acronym, category)
+    return "{{% term {} ??? %}}".format(acronym)
+endglobal
+
+snippet term "Insert term tag with auto-category lookup" "in_labnotebook()" we
+`!p
+acronym = t[1] if t[1] else "ACRONYM"
+snip.rv = ""
+`{% term ${1:ACRONYM} `!p
+if t[1]:
+    terms = load_all_terms()
+    snip.rv = terms.get(t[1], "???")
+else:
+    snip.rv = "category"
+` %}$0
+endsnippet
