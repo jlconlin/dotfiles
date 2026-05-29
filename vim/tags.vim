@@ -1,6 +1,6 @@
 " Where ViM should search for ctags
-if !isdirectory($HOME.'/.vim/ctags') && exists('*mkdir')
-  call mkdir($HOME.'/.vim/ctags')
+if !isdirectory($MYVIMDIR.'/ctags') && exists('*mkdir')
+  call mkdir($MYVIMDIR.'/ctags')
 endif
 set tags=$MYVIMDIR/ctags
 

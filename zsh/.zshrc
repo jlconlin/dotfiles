@@ -6,7 +6,6 @@ export HISTSIZE=$HISTFILESIZE
 export HISTCONTROL=ignoredups:erasedups
 export HISTIGNORE="&:bg:fg:ll:h"
 
-export VIMINIT='source ~/.config/vim/vimrc'
 export ZSHRC=$HOME/.config/zsh
 
 # Get sourceFile command
@@ -15,13 +14,14 @@ source $ZSHRC/zsh/sourceFile.zsh
 # Provide opportunity to make local changes
 sourceFile $HOME/.zshrc.local
 
+sourceFile $ZSHRC/ohmy.zsh
+
+# Load OS-specific config AFTER oh-my-zsh so our aliases override theirs
 if [[ "$OSTYPE" == "darwin"* ]]; then
   sourceFile $ZSHRC/macos.zsh
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then
   sourceFile $ZSHRC/linux.zsh
 fi
-
-sourceFile $ZSHRC/ohmy.zsh
 
 unsetopt share_history      # This overrides what is in OhMyZsh
 setopt hist_ignore_dups

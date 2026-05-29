@@ -14,4 +14,4 @@ alias vim=$EDITOR
 alias gvim="vim -g"
 
 alias ls='ls -AG'
-alias ll='ls -lhG'
+alias ll='ls -lhAG'
