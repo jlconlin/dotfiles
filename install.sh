@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "🔧 Installing dotfiles..."
+
+# Get the directory where this script lives
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Initialize submodules
+echo "📦 Initializing git submodules..."
+cd "$DOTFILES_DIR"
+git submodule update --init --recursive
+
+# Set up zsh symlink
+echo "🔗 Setting up zsh symlink..."
+if [ -L "$HOME/.zshrc" ]; then
+    echo "   ~/.zshrc symlink already exists, skipping"
+elif [ -f "$HOME/.zshrc" ]; then
+    echo "   ⚠️  ~/.zshrc exists as a regular file. Backing up to ~/.zshrc.backup"
+    mv "$HOME/.zshrc" "$HOME/.zshrc.backup"
+    ln -s "$DOTFILES_DIR/zsh/.zshrc" "$HOME/.zshrc"
+else
+    ln -s "$DOTFILES_DIR/zsh/.zshrc" "$HOME/.zshrc"
+fi
+
+# Install vim plugins if vim is available
+if command -v vim &> /dev/null; then
+    echo "📦 Installing vim plugins..."
+    vim +PluginInstall +qall || true
+else
+    echo "   ⚠️  vim not found, skipping plugin installation"
+fi
+
+echo ""
+echo "✅ Dotfiles installation complete!"
+echo ""
+echo "Next steps:"
+echo "  1. Reload your shell: source ~/.zshrc"
+echo "  2. (Optional) Install tmux plugins: prefix + I (capital i) in tmux"
+echo ""
