@@ -2,10 +2,13 @@ set nocompatible              " be iMproved, required
 set pyxversion=3
 " source ~/.vim/python3.vim
 
+" Set MYVIMDIR to the directory containing this vimrc
+let $MYVIMDIR = fnamemodify($MYVIMRC, ':p:h')
+
 " set synmaxcol=100       " Don't syntax higlight beyond 100th column
 let g:polyglot_disabled = ['latex']
 
-source ~/.config/vim/Plug.vim
+source $MYVIMDIR/Plug.vim
 
 filetype plugin indent on
 
@@ -120,8 +123,8 @@ set completefunc=emoji#complete
 " enable AutoSave on Vim startup
 let g:auto_save = 1  
 
-source ~/.config/vim/vimdirs.vim
-source ~/.config/vim/snippets.vim
-source ~/.config/vim/tags.vim
-source ~/.config/vim/mac.vim         " Settings unique to Mac
-source ~/.config/vim/vim-ai.vim
+source $MYVIMDIR/vimdirs.vim
+source $MYVIMDIR/snippets.vim
+source $MYVIMDIR/tags.vim
+source $MYVIMDIR/mac.vim         " Settings unique to Mac
+source $MYVIMDIR/vim-ai.vim
