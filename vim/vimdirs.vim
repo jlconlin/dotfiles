@@ -12,10 +12,12 @@ endif
 if !isdirectory($MYVIMDIR.'/files/undo') && exists('*mkdir')
   call mkdir($MYVIMDIR.'/files/undo')
 endif
+if !isdirectory($MYVIMDIR.'/plugged') && exists('*mkdir')
+  call mkdir($MYVIMDIR.'/plugged')
+endif
 
-set backupdir =$MYVIMDIR/files/backup/
-set directory =$MYVIMDIR/files/swap/
+set backupdir=$MYVIMDIR.'/files/backup/'
+set directory=$MYVIMDIR.'/files/swap/'
 set undofile
-set undodir   =$MYVIMDIR/files/undo/
-
+set undodir=$MYVIMDIR.'/files/undo/'
 
