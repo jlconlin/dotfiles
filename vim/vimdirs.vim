@@ -1,21 +1,21 @@
 " Temporary Files
 " create directory if needed
-if !isdirectory($HOME.'/.vim/files') && exists('*mkdir')
-  call mkdir($HOME.'/.vim/files')
+if !isdirectory($MYVIMDIR.'/files') && exists('*mkdir')
+  call mkdir($MYVIMDIR.'/files')
 endif
-if !isdirectory($HOME.'/.vim/files/backup') && exists('*mkdir')
-  call mkdir($HOME.'/.vim/files/backup')
+if !isdirectory($MYVIMDIR.'/files/backup') && exists('*mkdir')
+  call mkdir($MYVIMDIR.'/files/backup')
 endif
-if !isdirectory($HOME.'/.vim/files/swap') && exists('*mkdir')
-  call mkdir($HOME.'/.vim/files/swap')
+if !isdirectory($MYVIMDIR.'/files/swap') && exists('*mkdir')
+  call mkdir($MYVIMDIR.'/files/swap')
 endif
-if !isdirectory($HOME.'/.vim/files/undo') && exists('*mkdir')
-  call mkdir($HOME.'/.vim/files/undo')
+if !isdirectory($MYVIMDIR.'/files/undo') && exists('*mkdir')
+  call mkdir($MYVIMDIR.'/files/undo')
 endif
 
-set backupdir =$HOME/.vim/files/backup/
-set directory =$HOME/.vim/files/swap/
+set backupdir =$MYVIMDIR/files/backup/
+set directory =$MYVIMDIR/files/swap/
 set undofile
-set undodir   =$HOME/.vim/files/undo/
+set undodir   =$MYVIMDIR/files/undo/
 
 

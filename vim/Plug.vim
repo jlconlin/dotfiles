@@ -1,5 +1,5 @@
 " Specify a directory for plugins
-call plug#begin('~/.config/vim/plugged')
+call plug#begin('$MYVIMDIR/plugged')
 
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'jeetsukumaran/vim-buffergator'
