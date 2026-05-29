@@ -6,8 +6,8 @@ export HISTSIZE=$HISTFILESIZE
 export HISTCONTROL=ignoredups:erasedups
 export HISTIGNORE="&:bg:fg:ll:h"
 
-
-export ZSHRC=$HOME/.zsh
+export VIMINIT='source ~/.config/vim/vimrc'
+export ZSHRC=$HOME/.config/zsh
 
 # Get sourceFile command
 source $ZSHRC/zsh/sourceFile.zsh

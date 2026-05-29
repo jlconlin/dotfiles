@@ -2,7 +2,7 @@
 if !isdirectory($HOME.'/.vim/ctags') && exists('*mkdir')
   call mkdir($HOME.'/.vim/ctags')
 endif
-set tags=~/.vim/ctags
+set tags=~/.config/vim/ctags
 
 " Use CTRL-\ to open a (ctag) definition in a new tab
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>

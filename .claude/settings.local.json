@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(vim -u ~/.config/vim/vimrc --version)"
+    ]
+  }
+}
