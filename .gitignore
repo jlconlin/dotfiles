@@ -1,0 +1,18 @@
+# Vim runtime directories
+vim/files/
+vim/plugged/
+
+# Tmux plugins (managed by tpm)
+tmux/plugins/*
+!tmux/plugins/.gitkeep
+
+# Swap files
+*.swp
+*.swo
+*.swn
+
+# macOS
+.DS_Store
+
+# Claude Code
+.claude/
