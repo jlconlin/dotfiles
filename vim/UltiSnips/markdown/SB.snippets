@@ -1,0 +1,118 @@
+# Safety Basis Snippets for markdown
+extends markdown
+
+snippet sbb "Safety Basis Daily Briefing" b
+## SB Daily Briefing
+
+### Technical Services
+${0}
+endsnippet
+
+snippet code "code tag" i
+{% code ${1:${VISUAL}} %}$0
+endsnippet
+	
+snippet facil "facility tag" i
+{% facility ${1:${VISUAL}} %}$0
+endsnippet
+	
+snippet org "org tag" i
+{% org ${1:${VISUAL}} %}$0
+endsnippet
+	
+snippet stat "ST/AT tag" i
+{% STAT $1 %}
+${2:${VISUAL}}
+{% endSTAT %}
+$0
+endsnippet
+
+snippet std "standard tag" i
+{% standard ${1:${VISUAL}} DOE %}$0
+endsnippet
+
+snippet order "order tag" i
+{% order ${1:${VISUAL}} DOE %}$0
+endsnippet
+
+snippet CFR "CFR tag" i
+{% CFR ${1:${VISUAL}} ${2} %}$0
+endsnippet
+	
+snippet c/Q "ꭓ/Q" i
+ꭓ/Q$0
+endsnippet
+
+# Terms
+snippet "(?<!{% term )DSA" "DSA term tag" ir
+{% term DSA SB %}$0
+endsnippet
+
+snippet "(?<!{% term )FHC" "FHC term tag" ir
+{% term FHC SB %}$0
+endsnippet
+
+snippet "(?<!{% term )TSR" "TSR term tag" ir
+{% term TSR SB %}$0
+endsnippet
+
+snippet "(?<!{% term )LPF" "LPF term tag" ir
+{% term LPF SB %}$0
+endsnippet
+
+snippet S/A "SAD/ASE term tag" i
+{% term SAD/ASE SB %}$0
+endsnippet
+
+snippet ST/AT "ST/AT term tag" i
+{% term ST/AT SB %}$0
+endsnippet
+
+snippet USI "USI term tag" i
+{% term USI SB %}$0
+endsnippet
+
+snippet c/Q "ꭓ/Q" i
+{% term ꭓ/Q SB %}$0
+endsnippet
+
+snippet wrt "With Respect to" i
+{% term WRT misc %}$0
+endsnippet
+
+snippet "(?<!{% term )AI\b" "AI term tag" ir
+{% term AI misc %}$0
+endsnippet
+
+# Codes
+snippet Pf "Pathfinder code tag" i
+{% code Pathfinder %}$0
+endsnippet
+
+snippet MACCS "MACCS code tag" i
+{% code MACCS %}$0
+endsnippet
+
+snippet MELCOR "MELCOR code tag" i
+{% code MELCOR %}$0
+endsnippet
+
+snippet CFAST "CFAST code tag" i
+{% code CFAST %}$0
+endsnippet
+
+# Orders
+snippet "(?<!{% order )420.2D" "420.2D order tag" ir
+{% order 420.2D DOE %}$0
+endsnippet
+
+# Standards
+snippet "(?<!{% standard )3009" "3009-2014 tag" ir
+{% standard 3009-2014 DOE %}$0
+endsnippet
+
+snippet "(?<!{% standard )1189" "1189-2016 tag" ir
+{% standard 1189-2016 DOE %}$0
+endsnippet
+
+	

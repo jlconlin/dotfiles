@@ -1,0 +1,14 @@
+# LANL Snippets for markdown
+extends markdown
+
+snippet BLDG "Building tag" i
+{% BLDG $1 $2 %}$0
+endsnippet
+
+snippet TA "Technical Area tag" i
+{% TA ${1:${VISUAL}} %}$0
+endsnippet
+
+snippet	pdfLink "pdfLink tag" i
+{% pdfLink ${1:VISUAL} %}$0
+endsnippet

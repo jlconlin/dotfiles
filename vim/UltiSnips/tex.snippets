@@ -1,0 +1,143 @@
+snippet columns "beamer columns" b
+\begin{columns}[${1:c}]
+	\begin{column}{${2:0.5}\textwidth}
+		${4:${VISUAL}}
+	\end{column}
+	\begin{column}{${3:0.5}\textwidth}
+		$5
+	\end{column}
+\end{columns}
+$0
+endsnippet
+
+snippet labday "lab note book labday" b
+\labday{`date "+%B %d, %Y, %A"`}\label{day:`date "+%Y-%m-%d"`}
+
+endsnippet
+
+snippet experiment "lab notebook experiment" b
+\experiment{$1}
+\subexperiment{$2}
+
+endsnippet
+
+snippet subexp "lab notebook subexperiment" b
+\subexperiment{$1}
+
+endsnippet
+
+snippet ig "includegraphics" b
+\includegraphics[${1:width=\textwidth,keepaspectratio}]{$0${VISUAL}}
+endsnippet
+
+snippet frame "Beamer frame environment" b
+\begin{frame}${1:[fragile]}{${2:title}}
+	${3:${VISUAL}}
+\end{frame}
+$0
+endsnippet
+
+snippet minti "\mintinline"
+\mintinline${1:[options]}{${2:language}}|${3:${VISUAL}}|$0
+endsnippet
+
+snippet person "Person macro" 
+\person{$1}{$2}$0
+endsnippet
+	
+snippet subfigure "subfigure environment" b
+\begin{subfigure}${1:[b]}{${2:0.4\textwidth}}
+	${0:${VISUAL}}
+\end{subfigure}
+endsnippet
+
+snippet minted "minted environment" b
+\begin{minted}[${1:frame=single}]{${2:language}}
+${0:${VISUAL}}
+\end{minted}
+endsnippet
+
+snippet only "beamer only command" b
+\only<${1:1}>{
+  ${2:${VISUAL}}
+}$0
+endsnippet
+
+snippet uncover "beamer uncover command" b
+\uncover<${1:1}>{${2:${VISUAL}}}$0
+endsnippet
+
+snippet surround "surround with some stuff" i
+$1${VISUAL}$0
+endsnippet
+
+snippet up "usepackage" b
+\usepackage${1:[options]}{${2:${VISUAL:package}}}$0
+endsnippet
+
+snippet mode "beamer mode environment" 
+\mode${1:<article>}{${2:${VISUAL:text}}}$0
+endsnippet 
+
+snippet isotope "description" w
+\isotope[$1]{$2}$0
+endsnippet
+
+snippet num "siunitx number" w
+\num{${1:${VISUAL:123.45}}}$0
+endsnippet
+
+snippet email "email command" w
+\email{${1:${VISUAL:@lanl.gov}}}$0
+endsnippet
+
+snippet ibv "ibibleverse" i
+\ibibleverse{${1}}(${2})$0
+endsnippet
+
+snippet bq "blockquote" w
+\blockquote[${2:reference}]{${1:${VISUAL}}}$0
+endsnippet
+	
+snippet fn "footnote" i
+\footnote{${1:${VISUAL}}}$0
+endsnippet
+
+snippet NJOY "NJOY command" 
+\NJOY{${1:21}}$0
+endsnippet
+	
+snippet " "quotes" 
+\`\`${1:${VISUAL}}''${2}
+endsnippet
+	
+snippet note "Beamer note"
+\note{${1:${VISUAL}}}$0
+endsnippet
+
+snippet vsp "vspace" 
+\vspace{${1:2ex}}$0
+endsnippet
+	
+snippet sloppypar "Sloppypar paragraph" b
+\begin{sloppypar}
+${1:${VISUAL}}
+\end{sloppypar}$0
+endsnippet
+	
+# Snippets for the bibleref LaTeX package
+snippet Matthew "Matthew bible reference" w
+\ibibleverse{Matthew}($1)$0
+endsnippet
+
+snippet Mark "Mark bible reference" w
+\ibibleverse{Mark}($1)$0
+endsnippet
+
+snippet Luke "Luke bible reference" w
+\ibibleverse{Luke}($1)$0
+endsnippet
+
+snippet John "John bible reference" w
+\ibibleverse{John}($1)$0
+endsnippet
