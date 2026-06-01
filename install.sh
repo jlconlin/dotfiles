@@ -32,6 +32,19 @@ else
     echo "   ⚠️  vim not found, skipping plugin installation"
 fi
 
+# Check tmux version and provide guidance
+if command -v tmux &> /dev/null; then
+    TMUX_VERSION=$(tmux -V | cut -d' ' -f2)
+    echo "✓ tmux found (version $TMUX_VERSION)"
+    echo "   Config will be auto-loaded from ~/.config/tmux/tmux.conf"
+    if [ -f "$HOME/.tmux.conf" ] || [ -L "$HOME/.tmux.conf" ]; then
+        echo "   ⚠️  ~/.tmux.conf exists. For tmux 3.1+, this is not needed."
+        echo "   Consider removing it to use the ~/.config/tmux location."
+    fi
+else
+    echo "   ⚠️  tmux not found, skipping tmux setup"
+fi
+
 echo ""
 echo "✅ Dotfiles installation complete!"
 echo ""
