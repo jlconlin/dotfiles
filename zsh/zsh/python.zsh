@@ -1,19 +1,14 @@
-## Setting some python variables
-export PYTHON3=`which python3`
-##
-## This assumes an anaconda distribution
-export PYTHON3HOME="${PYTHON3%/*/*}"
-export pythonthreedll="$PYTHON3HOME/lib"
-export LD_LIBRARY_PATH=$PYTHON3HOME/lib:$LD_LIBRARY_PATH
+# Python environment management via pyenv
 
-# Adding default Python for Mac
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  echo "I'm a Python Darwin"
-  export PATH="/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/bin:${PATH}"
+if command -v pyenv >/dev/null; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init --path)"
 fi
-# Setting some python variables
-# This assumes an anaconda distribution
-export PYTHON3=`which python3`
-export PYTHON3HOME="${PYTHON3%/*/*}"
-export pythonthreedll="$PYTHON3HOME/lib"
-export LD_LIBRARY_PATH=$PYTHON3HOME/lib:$LD_LIBRARY_PATH
+
+# Optional: prevent Python from writing .pyc files
+# export PYTHONDONTWRITEBYTECODE=1
+
+# Optional: useful aliases
+# alias py='python'
+# alias py3='python3'
