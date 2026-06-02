@@ -1,6 +1,6 @@
 # Configurations specific to Linux
 
-export ZSHRC_LINUX=$ZSHRC/linux
+export ZDOTDIR_LINUX=$ZDOTDIR/linux
 
 alias ls='ls -AF --color=auto'
 alias ll='ls -lhF --color=auto'
