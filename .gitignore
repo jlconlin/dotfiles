@@ -6,10 +6,8 @@ vim/plugged/
 tmux/plugins/*
 !tmux/plugins/.gitkeep
 
-# Swap files
-*.swp
-*.swo
-*.swn
+# ZSH
+zsh/.zsh_history
 
 # macOS
 .DS_Store
