@@ -7,6 +7,9 @@ export HISTSIZE=$HISTFILESIZE
 export HISTCONTROL=ignoredups:erasedups
 export HISTIGNORE="&:bg:fg:ll:h"
 
+# LaTeX configuration
+export LATEXMKRCSYS="$HOME/.config/.latexmkrc"
+
 # Get sourceFile command
 source $ZDOTDIR/zsh/sourceFile.zsh
 
