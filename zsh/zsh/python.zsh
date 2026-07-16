@@ -1,9 +1,11 @@
-# Python environment management via pyenv
+# Python environment management via uv
 
-if command -v pyenv >/dev/null; then
-  export PYENV_ROOT="$HOME/.pyenv"
-  export PATH="$PYENV_ROOT/bin:$PATH"
-  eval "$(pyenv init --path)"
+if command -v uv >/dev/null; then
+  # uv is installed - Python versions are managed by uv
+  # Use: uv python install 3.12  (to install a Python version)
+  # Use: uv python list          (to see installed versions)
+  # Use: uv venv                 (to create virtual environments)
+  :
 fi
 
 # Optional: prevent Python from writing .pyc files

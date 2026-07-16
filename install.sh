@@ -12,6 +12,19 @@ echo "📦 Initializing git submodules..."
 cd "$DOTFILES_DIR"
 git submodule update --init --recursive
 
+# Set up ~/.zshenv
+echo " Setting up zsh environment..."
+
+if [ -L "$HOME/.zshenv" ]; then
+    echo " ~/.zshenv symlink already exists, skipping"
+elif [ -e "$HOME/.zshenv" ]; then
+    echo " ~/.zshenv exists. Backing up to ~/.zshenv.backup"
+    mv "$HOME/.zshenv" "$HOME/.zshenv.backup"
+    ln -s "$DOTFILES_DIR/zsh/.zshenv" "$HOME/.zshenv"
+else
+    ln -s "$DOTFILES_DIR/zsh/.zshenv" "$HOME/.zshenv"
+fi
+
 # Set up zsh symlink
 echo "🔗 Setting up zsh symlink..."
 if [ -L "$HOME/.zshrc" ]; then
