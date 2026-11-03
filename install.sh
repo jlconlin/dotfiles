@@ -40,20 +40,27 @@ fi
 # Install vim plugins if vim is available
 if command -v vim &> /dev/null; then
     echo "📦 Installing vim plugins..."
-    vim +PluginInstall +qall || true
+    vim +PlugInstall +qall || true
 else
     echo "   ⚠️  vim not found, skipping plugin installation"
 fi
 
-# Check tmux version and provide guidance
+# Set up tmux symlink
+echo "🔗 Setting up tmux symlink..."
+if [ -L "$HOME/.tmux.conf" ]; then
+    echo "   ~/.tmux.conf symlink already exists, skipping"
+elif [ -f "$HOME/.tmux.conf" ]; then
+    echo "   ⚠️  ~/.tmux.conf exists as a regular file. Backing up to ~/.tmux.conf.backup"
+    mv "$HOME/.tmux.conf" "$HOME/.tmux.conf.backup"
+    ln -s "$DOTFILES_DIR/tmux/tmux.conf" "$HOME/.tmux.conf"
+else
+    ln -s "$DOTFILES_DIR/tmux/tmux.conf" "$HOME/.tmux.conf"
+fi
+
+# Check tmux version
 if command -v tmux &> /dev/null; then
     TMUX_VERSION=$(tmux -V | cut -d' ' -f2)
     echo "✓ tmux found (version $TMUX_VERSION)"
-    echo "   Config will be auto-loaded from ~/.config/tmux/tmux.conf"
-    if [ -f "$HOME/.tmux.conf" ] || [ -L "$HOME/.tmux.conf" ]; then
-        echo "   ⚠️  ~/.tmux.conf exists. For tmux 3.1+, this is not needed."
-        echo "   Consider removing it to use the ~/.config/tmux location."
-    fi
 else
     echo "   ⚠️  tmux not found, skipping tmux setup"
 fi

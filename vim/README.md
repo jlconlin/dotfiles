@@ -14,7 +14,7 @@ Included with these configuration files are
  - `gvimrc`
 
 ## Plugins
-Plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug). If you cloned recursively then this should be available automatically.
+Plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug). vim-plug itself is vendored in this repository as `autoload/plug.vim`, so no submodule is needed.
 
 ### Installing Plugins
 Once the repository has been cloned and configured the plugins can be installed simply by executing:
